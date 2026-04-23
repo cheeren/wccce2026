@@ -1,0 +1,1096 @@
+---
+title: "Everything I Know About Teaching I Learned at Puzzled Pint"
+subtitle: "WCCCE 2026"
+author: "Cinda Heeren"
+format:
+  revealjs:
+    theme: default
+    width: 1280
+    height: 720
+    slide-number: false
+    controls: true
+    progress: false
+---
+
+<!-- SLIDE 1: JOTTO — the opening activity -->
+
+##
+
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; font-family: monospace; font-size: 3.5rem; font-weight: bold; text-align: center; margin: 2rem auto; max-width: 900px; letter-spacing: 0.1em;">
+<span>DEW</span><span>FOX</span><span>GEL</span><span>INK</span>
+<span>JOG</span><span>MOB</span><span>NAP</span><span>NIP</span>
+<span>NOR</span><span>NUT</span><span>OAT</span><span>OIL</span>
+<span>PUG</span><span>SOY</span><span>WOO</span><span>YAK</span>
+</div>
+
+<p style="text-align: center; font-size: 1.1rem; color: #666; margin-top: 2rem;">Pick one. Agree on it. Don't write it down.</p>
+
+::: {.notes}
+NO PREAMBLE. Walk in. Start the slide. Say:
+
+"Pick a partner. I'm going to leave the room. While I'm gone, choose one word from this list — agree on it together, remember it. Don't write it down."
+
+Leave the room. Give them 60 seconds.
+
+Return to the BACK of the room. They turn to look at you.
+
+Advance to the next slide — your decision tree. Play Jotto from the back of the room. Ask your questions. Narrow it down. Guess the word.
+
+Win or lose — either is interesting.
+
+Then walk to the front.
+
+"That's a decision tree. And that only works in a room."
+
+Pause.
+
+"I've been very very busy this year."
+:::
+
+---
+
+<!-- SLIDE 2: JOTTO decision tree -->
+
+##
+
+<iframe src="jotto_trees.html" width="100%" height="600px" style="border: none; background: white;" scrolling="yes"></iframe>
+
+::: {.notes}
+Play the game from here. This iframe loads the full decision tree gallery (jotto_trees.html).
+
+Navigate to the "Greedy Minimax" tree — first guess is MOB, max depth 8.
+
+MOB first guess partitions:
+  score 0 → DEW GEL INK NAP NIP NUT PUG YAK (8 words)
+  score 1 → FOX JOG NOR OAT OIL SOY WOO (7 words)
+  score 3 → MOB (identified!)
+
+If slide / iframe isn't cooperating, open jotto_trees.html in a separate browser tab before presenting.
+
+Ask questions aloud. Show your reasoning.
+
+If you win: "A decision tree. Here's why it worked — and here's what it has to do with everything I'm about to show you."
+
+If you lose: "Also a decision tree. Here's what went wrong — and why that's just as interesting."
+
+Either way: this was a community activity. The room held information you didn't have. You needed them. They needed each other to agree. Nothing about this works alone, or on a recording.
+
+That's the talk.
+:::
+
+---
+
+<!-- SLIDE 3: I've been busy -->
+
+##
+
+`[IMAGE: an image that communicates "I have been extremely busy and slightly unhinged"]`
+
+::: {.notes}
+"I've been very very busy this year — two new courses, one significantly reworked. I haven't turned off the course-design machine. This is the only thing I'm prepared to talk about."
+
+Frame the scope: course design = assessment + learning activities. This talk is about learning activities. Assessment is begging for its own conversation — I'd love to hear what this room is doing there too.
+
+This is meant to be a community conversation, not a lecture.
+:::
+
+---
+
+<!-- SLIDE 4: The patient tutor -->
+
+##
+
+`[IMAGE: an image that communicates "a patient, knowledgeable presence available at 3am"]`
+
+::: {.notes}
+"Your students now have access to a knowledgeable, patient, infinitely available resource that will explain anything in the course. Any time. For free."
+
+Don't name it. Let them fill in the blank.
+
+"What does that mean for what *you* do?"
+
+Sit with the question. Let it land.
+:::
+
+---
+
+<!-- SLIDE 5: The diagnosis -->
+
+##
+
+`[IMAGE: an image that communicates "something quietly eroding — presence, connection, participation"]`
+
+::: {.notes}
+"I don't have data for this. But I've been noticing things. Maybe you have too."
+
+Four observations — anecdotal, not evidence:
+- Attendance is falling
+- Students are more reticent to participate in class
+- Piazza is quieter — students aren't asking each other questions anymore
+- And the one that stopped me cold: "what did Claude mean when they said..."
+
+That last one. They're not forming a question to bring to the community. They're outsourcing the comprehension itself.
+
+"If any of that resonates — I think it matters."
+
+Pause.
+
+"So I've been thinking about what we bring that a private tutor cannot. You just experienced one answer."
+
+Gesture back toward the Jotto activity.
+:::
+
+---
+
+<!-- SLIDE 6: Community is the learning -->
+
+##
+
+`[IMAGE: an image that communicates "a group solving something together that none of them could solve alone"]`
+
+::: {style="font-size: 0.85em; margin-top: 1em;"}
+> "The community doesn't support the learning. The community produces it."
+
+Woolley et al. (2010, *Science*) &emsp;|&emsp; Lave & Wenger (1991) &emsp;|&emsp; Wegner, transactive memory
+:::
+
+::: {.notes}
+
+in 2012 a student came to me with a youtube video about DFS. It was a concise, correct example, delivered when the student wanted to hear it. That was just a foreshadowing of today's situation, where students have 24/7 personal tutors for ALL material. And it was my headsup that I needed to improve my game. I've been trying ever since. 
+
+"A tutor gives one student one explanation. It cannot give you the room."
+
+Woolley et al.: groups have a measurable collective intelligence — a c-factor — not predicted by any individual member's intelligence. The group produces solutions no member could reach alone. (Puzzled Pint story.)
+
+Lave & Wenger: learning is participation in a community of practice, not transfer of information. Structurally impossible 1:1.
+
+Wegner transactive memory: groups develop shared awareness of who knows what, divide cognitive labor. The group itself becomes a cognitive system.
+
+"Every workplace is a group project. We're practicing."
+
+This is not a theme — it's the substrate. Everything that follows is designed for a room.
+
+"But here's the harder question — how do you convince a student who has already opted out? I have one answer. I suspect you have others. Let's talk about that too."
+
+Note: I record everything and livestream every class. Students who can't be there have full access. If they're not showing up, it's a choice. And that choice has a cost they may not know about.
+:::
+
+---
+
+## Here's my year. {#the-list}
+
+::: {style="font-size: 0.55em; columns: 2; column-gap: 3em;"}
+| # | Topic | concept |
+|---|-------|---------|
+| [1](#candy-hearts) | Candy Hearts Factory | stacks |
+| [2](#love-letters) | Love Letters in the Mountains | BFS |
+| [3](#muddy-city) | Muddy City | MST |
+| [4](#sages) | Sages & Tricksters | logic |
+| [5](#billboard) | Billboard Hot 100 | ordered data |
+| [6](#heist) | The Great Data Heist | dictionaries |
+| [7](#isomorphism) | Graph Isomorphism Detective | graph theory |
+| [8](#birthday) | Birthday Paradox | probability |
+| [9](#jotto) | Jotto | decision trees |
+| [10](#genome-assembly) | Genome Assembly | Euler paths |
+| [11](#voronoi) | Voronoi / Seurat | BFS |
+| [12](#mhall) | Mary Had a Little Lamb | Markov chains |
+| [13](#literary) | Literary Social Networks | NER + graphs |
+| [14](#campus-walks) | Campus Walks ★ | graphs |
+| [15](#bird-staging) | Bird Staging ★ | divide & conquer |
+| [16](#musical-influence) | Musical Influence Explorer ★ | BFS / DFS / SCC |
+| [17](#game-of-life) | Game of Life ★ | cellular automata |
+| [18](#pokemon) | Pokémon Explorer ★ | data frames |
+| [19](#genomic-intervals) | Genomic Interval Explorer ★ | interval trees |
+| [20](#eulers-formula) | Euler's Formula | planar graphs |
+:::
+
+::: {style="font-size: 0.5em; margin-top: 0.5em;"}
+★ = independent project &emsp; *I've prepared 20 talks. Pick two.*
+:::
+
+::: {.notes}
+Audience participation. Hold up fingers for choice number. Take a photo. Tally.
+
+The joke lands here: "I've actually prepared 20 talks today. You're choosing 2."
+
+The point of the list is the volume and variety — art, music, nature, wellness, mystery, games, biology, literature. Don't read it aloud. Let them scan it. Give them 20 seconds.
+
+Prepared anchors: Euler's Formula (#20) and Candy Hearts (#1). Voronoi (#11) is available but not the default — it's strong on sensory design, weaker on community dependency.
+:::
+
+---
+
+<!-- ============================================================ -->
+<!-- CANDY HEARTS FACTORY -->
+<!-- ============================================================ -->
+
+## Candy Hearts · Know the canon {#candy-hearts}
+
+`[IMAGE: standard stack diagram — push/pop, LIFO, textbook style]`
+
+::: {.notes}
+"Here's how stacks are normally taught. A stack is a LIFO data structure. Push. Pop. Peek. This is what they can get anywhere, any time."
+:::
+
+---
+
+## Candy Hearts · Find the joy
+
+`[IMAGE: Valentine's Day candy hearts on a conveyor belt — chaotic, colorful, festive]`
+
+::: {.notes}
+"It's the night before Valentine's Day at the candy heart factory. The hearts got mixed up on the conveyor belts."
+
+I love Advent of Code puzzles — this problem structure came from there. An agent helped me build the personalized instances. The vision was mine; the execution was collaborative.
+:::
+
+---
+
+## Candy Hearts · Make them build
+
+`[IMAGE: screenshot of the Marimo notebook workspace — input.txt with stacks and instructions visible]`
+
+::: {.notes}
+"Each student gets a unique input — their own factory floor, their own set of instructions. They execute the stack operations themselves, in code."
+
+The constructivist moment: they don't watch a stack being manipulated. They manipulate it. And they don't know yet what they're building toward.
+:::
+
+---
+
+## Candy Hearts · Watch the metaphors
+
+`[IMAGE: conveyor belt → stack mapping — LIFO as "top of the belt", moving one at a time vs. all at once]`
+
+::: {.notes}
+"The conveyor belt is a stack. What does that metaphor hold? LIFO — the last heart placed is the first to move. What does it miss? Conveyor belts don't usually have a single exit point. Name the gap. Don't pretend the metaphor is perfect."
+
+The two-part puzzle — move one at a time vs. all at once — is where the metaphor earns its keep. Students feel the reversal before they can prove it.
+:::
+
+---
+
+## Candy Hearts · Build a narrative
+
+`[IMAGE: the reveal — a student's output spelling their personalized wellness message]`
+
+[← back to the list](#the-list)
+
+::: {.notes}
+"What word is spelled out by the letters on top of each belt?"
+
+Every student's answer is different. Every student's message is personal — "you got this", "breathe", "keep going."
+
+They learned stacks. They also got a Valentine.
+:::
+
+---
+
+<!-- ============================================================ -->
+<!-- VORONOI / SEURAT -->
+<!-- ============================================================ -->
+
+## Voronoi / Seurat · Know the canon {#voronoi}
+
+`[IMAGE: standard BFS pseudocode or diagram — queue, visited set, level-by-level expansion]`
+
+::: {.notes}
+"Here's BFS. Queue. Visited. Expand level by level. This is in every textbook. They can get this any time."
+:::
+
+---
+
+## Voronoi / Seurat · Find the joy
+
+`[IMAGE: Seurat's A Sunday on La Grande Jatte alongside a giraffe pattern, dragonfly wing, cell structure — Voronoi in nature and art]`
+
+::: {.notes}
+"Georges Seurat painted by placing dots of pure color, trusting the eye to blend them. He was doing something algorithmic before algorithms had names."
+
+"And then you look at a giraffe. A dragonfly wing. A soap bubble cluster. The same pattern, everywhere. BFS is not abstract — it's the thing that explains why the world looks the way it does."
+:::
+
+---
+
+## Voronoi / Seurat · Make them build
+
+`[IMAGE: screenshot of the Voronoi pipeline — sample pixels, seed points, BFS spreading color, output image]`
+
+::: {.notes}
+"Students sample an image for seed points, then run BFS from each seed simultaneously — each cell claims territory as the search expands. The output is a Voronoi diagram that looks like a painting."
+
+The constructivist moment: they build the pipeline step by step. They don't know it will look beautiful until it does.
+:::
+
+---
+
+## Voronoi / Seurat · Watch the metaphors
+
+`[IMAGE: BFS spreading vs. Voronoi region growing — the wave-front metaphor, where it holds and where it approximates]`
+
+::: {.notes}
+"BFS spreads level by level from a source. Voronoi regions grow outward from seeds. The metaphor holds beautifully for the intuition — and breaks slightly in the details (grid vs. continuous space, simultaneous multi-source BFS). Name the gap. Students who understand why the metaphor approximates understand both BFS and Voronoi better."
+:::
+
+---
+
+## Voronoi / Seurat · Build a narrative
+
+`[IMAGE: student output — their own image transformed into pointillist art, alongside the Seurat original and a natural Voronoi pattern]`
+
+[← back to the list](#the-list)
+
+::: {.notes}
+"They wrote an algorithm. It made art. And now they can see BFS in a giraffe."
+
+That's the narrative arc: Seurat → algorithm → nature → you just wrote something that explains the world.
+:::
+
+---
+
+<!-- ============================================================ -->
+<!-- EULER'S FORMULA -->
+<!-- ============================================================ -->
+
+## Euler's Formula · Know the canon {#eulers-formula}
+
+$$V - E + F = 2$$
+
+::: {.notes}
+"Euler's formula. It's in every discrete math textbook. Proof by induction. They can get it any time."
+
+Don't explain it yet. Just put it on the screen. Let it sit there.
+
+Then: "Now put it away. We're going to do something else."
+:::
+
+---
+
+## Euler's Formula · Find the joy
+
+`[IMAGE: a stack of index cards — graphs on one side, three numbers on the other, held face-down]`
+
+::: {.notes}
+"I have a deck of 6×9 cards. On one side: a graph. On the other side: three numbers."
+
+Distribute one card per student (or pair), graph-side up.
+
+"The graphs are for a different activity. Ignore them for now. Flip your card over. You've got three numbers."
+
+The misdirection is the whole setup. They're about to figure out the formula themselves — they just don't know it yet.
+:::
+
+---
+
+## Euler's Formula · Make them build
+
+::: {style="font-size: 1.3em; text-align: center; margin: 2em 0;"}
+**Your card has three numbers.**
+
+What's the relationship between them?
+:::
+
+::: {.notes}
+"Look at your numbers. What's the relationship between them?"
+
+Give them 60–90 seconds. Some will see it quickly, some won't.
+
+The relationship: one number + 2 equals the sum of the other two.
+(E + 2 = V + F, equivalently V - E + F = 2, but they don't know that yet.)
+
+Once a few have it, ask: "Does anyone want to share a conjecture?"
+
+Hear two or three. Don't confirm. Say: "Now flip your card."
+:::
+
+---
+
+## Euler's Formula · Watch the structure
+
+`[IMAGE: two or three sample cards side by side — graph on one side, V/E/F numbers on the other, with the formula annotated]`
+
+::: {.notes}
+"Now you have a graph AND three numbers. Which number is which?"
+
+This is the second puzzle: match the numbers to vertices, edges, and faces.
+
+"Test your hypothesis. Look at a neighbor's card. Does your rule hold for their graph too?"
+
+This is the moment community becomes epistemologically necessary. A student can't verify V - E + F = 2 from a single graph — they need other cases. Their neighbor's card is experimental data they couldn't generate alone.
+
+Common sticking point: the outer (infinite) face. "How many faces does a planar graph have?" Students almost always undercount by one until someone in the room names it.
+
+The formula breaks for non-planar graphs — that's worth naming briefly. "What happens with a graph you can't draw without crossings? Try to draw K₅."
+:::
+
+---
+
+## Euler's Formula · Build a narrative
+
+`[IMAGE: the room — students comparing cards, someone pointing at a graph, the formula written on a whiteboard by a student]`
+
+[← back to the list](#the-list)
+
+::: {.notes}
+"Here's the thing: no one could verify this alone. You needed other people's cards. Their graphs were your experimental data."
+
+The group converges on the answer. Someone will write the formula on the board before you do. Let them.
+
+Then pull up the slide from the beginning — V - E + F = 2 — and ask: "Did you need me to tell you that?"
+
+That's the narrative arc: a formula they've known for five minutes, discovered by the room.
+
+This is the cleanest example of community as epistemological necessity in the whole talk. The activity structurally requires neighbors. There is no solo path to verification.
+:::
+
+---
+
+<!-- ============================================================ -->
+<!-- PLACEHOLDER SECTIONS — fill in content later -->
+<!-- ============================================================ -->
+
+## Love Letters · Know the canon {#love-letters}
+`[IMAGE placeholder]`
+
+::: {.notes}
+BFS — canonical presentation.
+:::
+
+---
+
+## Love Letters · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Love Letters · Make them build
+`[IMAGE placeholder]`
+---
+
+## Love Letters · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Love Letters · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Muddy City · Know the canon {#muddy-city}
+`[IMAGE placeholder]`
+
+::: {.notes}
+MST — canonical presentation.
+:::
+
+---
+
+## Muddy City · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Muddy City · Make them build
+`[IMAGE placeholder]`
+---
+
+## Muddy City · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Muddy City · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Sages & Tricksters · Know the canon {#sages}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Logic / truth tables — canonical presentation.
+:::
+
+---
+
+## Sages & Tricksters · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Sages & Tricksters · Make them build
+`[IMAGE placeholder]`
+---
+
+## Sages & Tricksters · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Sages & Tricksters · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Billboard Hot 100 · Know the canon {#billboard}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Ordered data / lists — canonical presentation.
+:::
+
+---
+
+## Billboard · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Billboard · Make them build
+`[IMAGE placeholder]`
+---
+
+## Billboard · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Billboard · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## The Great Data Heist · Know the canon {#heist}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Dictionaries / hashing — canonical presentation.
+:::
+
+---
+
+## The Heist · Find the joy
+`[IMAGE placeholder]`
+---
+
+## The Heist · Make them build
+`[IMAGE placeholder]`
+---
+
+## The Heist · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## The Heist · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Graph Isomorphism Detective · Know the canon {#isomorphism}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Graph theory / isomorphism — canonical presentation.
+:::
+
+---
+
+## Isomorphism · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Isomorphism · Make them build
+`[IMAGE placeholder]`
+---
+
+## Isomorphism · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Isomorphism · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Birthday Paradox · Know the canon {#birthday}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Probability / collision — canonical presentation.
+:::
+
+---
+
+## Birthday Paradox · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Birthday Paradox · Make them build
+`[IMAGE placeholder]`
+---
+
+## Birthday Paradox · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Birthday Paradox · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Jotto · Know the canon {#jotto}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Decision trees — canonical presentation.
+:::
+
+---
+
+## Jotto · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Jotto · Make them build
+`[IMAGE placeholder]`
+---
+
+## Jotto · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Jotto · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Genome Assembly · Know the canon {#genome-assembly}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Euler paths — canonical presentation.
+:::
+
+---
+
+## Genome Assembly · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Genome Assembly · Make them build
+`[IMAGE placeholder]`
+---
+
+## Genome Assembly · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Genome Assembly · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Mary Had a Little Lamb · Know the canon {#mhall}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Markov chains — canonical presentation.
+:::
+
+---
+
+## Mary · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Mary · Make them build
+`[IMAGE placeholder]`
+---
+
+## Mary · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Mary · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Literary Social Networks · Know the canon {#literary}
+`[IMAGE placeholder]`
+
+::: {.notes}
+NER + graphs — canonical presentation.
+:::
+
+---
+
+## Literary · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Literary · Make them build
+`[IMAGE placeholder]`
+---
+
+## Literary · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Literary · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Campus Walks · Know the canon {#campus-walks}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Graph routing — canonical presentation.
+:::
+
+---
+
+## Campus Walks · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Campus Walks · Make them build
+`[IMAGE placeholder]`
+---
+
+## Campus Walks · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Campus Walks · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Bird Staging · Know the canon {#bird-staging}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Divide & conquer — canonical presentation.
+:::
+
+---
+
+## Bird Staging · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Bird Staging · Make them build
+`[IMAGE placeholder]`
+---
+
+## Bird Staging · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Bird Staging · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Musical Influence Explorer · Know the canon {#musical-influence}
+`[IMAGE placeholder]`
+
+::: {.notes}
+BFS/DFS/SCC — canonical presentation.
+:::
+
+---
+
+## Musical Influence · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Musical Influence · Make them build
+`[IMAGE placeholder]`
+---
+
+## Musical Influence · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Musical Influence · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Game of Life · Know the canon {#game-of-life}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Cellular automata — canonical presentation.
+:::
+
+---
+
+## Game of Life · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Game of Life · Make them build
+`[IMAGE placeholder]`
+---
+
+## Game of Life · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Game of Life · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Pokémon Explorer · Know the canon {#pokemon}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Data frames / remote APIs — canonical presentation.
+:::
+
+---
+
+## Pokémon · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Pokémon · Make them build
+`[IMAGE placeholder]`
+---
+
+## Pokémon · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Pokémon · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+## Genomic Interval Explorer · Know the canon {#genomic-intervals}
+`[IMAGE placeholder]`
+
+::: {.notes}
+Interval trees — canonical presentation.
+:::
+
+---
+
+## Genomic Intervals · Find the joy
+`[IMAGE placeholder]`
+---
+
+## Genomic Intervals · Make them build
+`[IMAGE placeholder]`
+---
+
+## Genomic Intervals · Watch the metaphors
+`[IMAGE placeholder]`
+---
+
+## Genomic Intervals · Build a narrative
+`[IMAGE placeholder]`
+
+[← back to the list](#the-list)
+
+---
+
+<!-- ============================================================ -->
+<!-- TABLE ACTIVITY -->
+<!-- ============================================================ -->
+
+##
+
+`[IMAGE: an image that communicates "people at tables, working together, a shared blank page waiting to be filled"]`
+
+::: {style="font-size: 0.8em; margin-top: 1em;"}
+You don't have to redesign your course. **Pick one thing.**
+
+::: {.fragment}
+| | |
+|--|--|
+| **1. The canon** | What's the standard treatment? What do your students already have access to? |
+| **2. The application** | What's a joyful, authentic context for this concept? |
+| **3. The puzzle** | Where can you create a gap — something they build rather than receive? |
+| **4. The metaphor** | What holds? What breaks? What could be made sensory? |
+| **5. The making** | What would students produce — that only works in a room? |
+:::
+:::
+
+::: {.notes}
+~5 min introductions at the table. ~10 min brainstorm. Brief share-out.
+
+The prompt: pick a topic you teach that feels dry, canonical, hard to make interesting. Run it through the five steps.
+
+You don't need to solve all five. Even one good answer to question 2 is enough to go home with.
+
+Listen carefully during share-out. Something will surface that you didn't anticipate. Name it. That's the c-factor, live, in this room.
+
+After share-out: "This is also how all 19 of my examples got built. Not all at once. One topic, one term, one joyful application at a time."
+
+Important: "I didn't design this methodology and then build the lessons. I built the lessons — and then noticed what they had in common. I've been tinkering all year, looking for the right approach. The methodology is a retrospective analysis — not a blueprint."
+
+This reframes the activity: you're not asking them to execute a framework. You're asking them to do what you did — try something, see what happens, trust the pattern will emerge.
+:::
+
+---
+
+<!-- ============================================================ -->
+<!-- METHODOLOGY + CLOSING -->
+<!-- ============================================================ -->
+
+##
+
+`[IMAGE: an image that communicates "five moves, a repeating pattern, something that clicks into place"]`
+
+::: {.fragment}
+**Community underlies all of it.** These moves are designed for a room.
+:::
+
+::: {.fragment style="margin-top: 0.8em;"}
+1. **Acknowledge the canonical treatment** — *start where they already are*
+2. **Situate in an authentic, motivating context** — *find something genuinely delightful*
+3. **Design for active knowledge construction** — *make them do something before you tell them anything*
+4. **Make structure perceptible** — *find the metaphor; know where it breaks; or make it sensory*
+5. **Culminate in authentic production** — *don't let them leave without having made something*
+:::
+
+::: {.notes}
+"Let's name what just happened."
+
+This is recognition, not instruction. They've seen two examples. Each step should land as "oh — that's what that was."
+
+Deliver each step with the juxtaposition:
+
+1. The standard exposition is freely available. I assume students have it. My job is not to replicate it — it's to do something they couldn't get anywhere else.
+
+2. Self-Determination Theory calls this autonomy-supportive instruction grounded in real problems with real stakes. I call it: finding something I actually want to talk about. Those turn out to be the same thing.
+
+3. Constructivism. Loewenstein's information gap. Curiosity as a drive state. I call it: never give away the answer before they've felt the question.
+
+4. Gentner's structure-mapping: analogies teach relational schemas, not surface features. A good metaphor transfers; a bad one misleads. Name the gap. And sometimes — forget the metaphor. Make it sensory. Let them hear the hash table slow down.
+
+5. Situated learning. Legitimate peripheral participation. The community as cognitive environment. I call it: don't let them leave without having made something they didn't know they could make.
+
+Important framing: "I didn't design this methodology and then build the lessons. I built the lessons — and then noticed what they had in common. I've been tinkering all year, looking for the right approach. This is a retrospective analysis, not a blueprint."
+
+That makes it more trustworthy, not less. A pattern noticed in things that worked is more reliable than a framework imposed in advance.
+
+Step 1 is the new one. Steps 2–5 have always existed. But step 1 changes urgency when the canon is freely available 24/7.
+
+Many of you already do this. Here's what it's called, here's why it works, and here's why it matters more now than it ever did.
+:::
+
+---
+
+##
+
+`[IMAGE: four small images — brain/dopamine, enthusiastic teacher, human pyramid, students working on something real]`
+
+::: {.fragment}
+Curiosity → memory &emsp; *(Gruber et al., 2014, Neuron)*
+:::
+::: {.fragment}
+Enthusiasm is contagious &emsp; *(Frenzel et al.)*
+:::
+::: {.fragment}
+Metaphors teach structure &emsp; *(Gentner, 1983)*
+:::
+::: {.fragment}
+Authentic problems motivate &emsp; *(PBL meta-analyses, 2024)*
+:::
+
+::: {.notes}
+Fast. These are explanations for what they just experienced, not arguments to convince them. They felt it already.
+:::
+
+---
+
+##
+
+`[IMAGE: an image that communicates "hearing something / feeling something / a non-visual sensory experience of structure"]`
+
+::: {.notes}
+"Remote resources can explain. They can demonstrate. They cannot make you feel a data structure."
+
+BST boops. Hash table you can hear slowing down. Rainbow maze. BFS that paints a Seurat.
+
+Sensory understanding is a different epistemic channel. Structurally unavailable to a remote resource.
+:::
+
+---
+
+##
+
+`[IMAGE: an image that communicates "honest uncertainty — not failure, just not knowing yet"]`
+
+::: {.notes}
+"Does it work? Depends what you mean by work."
+
+"If you mean grades — honestly, probably not measurably better. A patient tutor can get most students to a passing grade. That's not what I'm after."
+
+"I'm after the student who comes back after term and says they didn't expect to find this interesting. I'm after the moment when something clicks for twenty people at once and you can feel it."
+
+"I have no controlled study for that. What I have is a methodology grounded in research — and a room full of people who seemed to agree."
+
+Invite the room: "Many of you have been doing versions of this for years. Is it working? I think we collectively have the evidence."
+
+Then push further: "I don't have data. But I think we should. And figuring out what to measure — and how — might be the most important thing this community could do right now."
+
+This reframes "I don't have data" from an apology into an open research question the room owns together. These are researchers and educators — they're equipped to think about measurement. Invite them to.
+
+The question isn't whether this methodology produces better grades than a private tutor. It's whether it produces something a private tutor structurally cannot. That's not a measurement problem — it's a definitional one. We're not competing on the same axis. But if we believe what siloed learning costs students is real, then measuring it is our collective responsibility.
+:::
+
+---
+
+##
+
+::: {style="text-align: center; font-size: 1.3em; padding-top: 1.5em;"}
+A tutoring system answers your question.
+
+::: {.fragment}
+A teacher opens the gap that makes you realize
+you had a question in you all along —
+:::
+
+::: {.fragment}
+and the moment you feel that gap,
+
+**your brain is already learning.**
+:::
+:::
+
+::: {.notes}
+Let it breathe. No summary after this.
+:::
