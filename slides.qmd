@@ -4,37 +4,38 @@ subtitle: "WCCCE 2026"
 author: "Cinda Heeren"
 format:
   revealjs:
-    theme: default
+    theme: theme.scss
     width: 1280
     height: 720
     slide-number: false
     controls: true
     progress: false
+    chalkboard: true
 ---
+
+# Let's Play a Game...
 
 <!-- SLIDE 1: JOTTO — the opening activity -->
 
-##
+## Jotto
 
-<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; font-family: monospace; font-size: 3.5rem; font-weight: bold; text-align: center; margin: 2rem auto; max-width: 900px; letter-spacing: 0.1em;">
-<span>DEW</span><span>FOX</span><span>GEL</span><span>INK</span>
-<span>JOG</span><span>MOB</span><span>NAP</span><span>NIP</span>
-<span>NOR</span><span>NUT</span><span>OAT</span><span>OIL</span>
-<span>PUG</span><span>SOY</span><span>WOO</span><span>YAK</span>
-</div>
+<pre style="font-size: 3rem; font-weight: bold; text-align: center; line-height: 2; letter-spacing: 0.05em; border: none; box-shadow: none; background: transparent;">
+MOB    YAK    GEL    NIP
+OAT    PUG    FOX    NOR
+WOO    INK    SOY    JOG
+NUT    DEW    NAP    OIL
+</pre>
 
-<p style="text-align: center; font-size: 1.1rem; color: #666; margin-top: 2rem;">Pick one. Agree on it. Don't write it down.</p>
+<p style="text-align: center; font-size: 2.0rem; color: #666; margin-top: 2rem;">Pick one. Make sure everyone knows and agrees.</p>
 
 ::: {.notes}
 NO PREAMBLE. Walk in. Start the slide. Say:
 
-"Pick a partner. I'm going to leave the room. While I'm gone, choose one word from this list — agree on it together, remember it. Don't write it down."
+You are the wordle master and i'm going to try to guess your word. Pick one word from among these, and make sure everyone knows and agrees. I'll leave it to you to organize that -- i'm going to step out for a break. You have 45 seconds.
 
-Leave the room. Give them 60 seconds.
+Return to the BACK of the room. They turn to look.
 
-Return to the BACK of the room. They turn to look at you.
-
-Advance to the next slide — your decision tree. Play Jotto from the back of the room. Ask your questions. Narrow it down. Guess the word.
+Advance to the next slide — decision tree. Play Jotto from the back of the room. Ask your questions. Narrow it down. Guess the word.
 
 Win or lose — either is interesting.
 
@@ -44,121 +45,153 @@ Then walk to the front.
 
 Pause.
 
-"I've been very very busy this year."
 :::
-
----
 
 <!-- SLIDE 2: JOTTO decision tree -->
 
-##
+## My Jotto Algorithm
 
-<iframe src="jotto_trees.html" width="100%" height="600px" style="border: none; background: white;" scrolling="yes"></iframe>
+![](jotto_tree.svg){fig-align="center" width="100%"}
 
 ::: {.notes}
-Play the game from here. This iframe loads the full decision tree gallery (jotto_trees.html).
 
-Navigate to the "Greedy Minimax" tree — first guess is MOB, max depth 8.
+The difference in this game is that you just tell me *how many* letters my word has in common with yours. (how many of your letters are covered by mine.)
 
-MOB first guess partitions:
-  score 0 → DEW GEL INK NAP NIP NUT PUG YAK (8 words)
-  score 1 → FOX JOG NOR OAT OIL SOY WOO (7 words)
-  score 3 → MOB (identified!)
+Play the game from this tree. First guess is NOR.
 
-If slide / iframe isn't cooperating, open jotto_trees.html in a separate browser tab before presenting.
+walk to front.
 
-Ask questions aloud. Show your reasoning.
+This is my algorithm for playing Jotto with you. 
 
-If you win: "A decision tree. Here's why it worked — and here's what it has to do with everything I'm about to show you."
+The structure is called a decision tree -- the edges correspond to an answer to a question posed via the vertices. 
 
-If you lose: "Also a decision tree. Here's what went wrong — and why that's just as interesting."
+Do you like this tree? 
 
-Either way: this was a community activity. The room held information you didn't have. You needed them. They needed each other to agree. Nothing about this works alone, or on a recording.
+What makes it good or bad? What's the best we could hope for?
 
-That's the talk.
+This is the "worst strategy" decision tree for these words — deliberately bad splits.
+
+Play a round with a neighbor, using this tree, so you can see exactly how it works. 
+
+"Wait — this isn't class. You don't have to answer."
+
 :::
 
----
+<!-- SLIDE 3: Two visions — "That's how I want to teach" -->
 
-<!-- SLIDE 3: I've been busy -->
+## How I want to teach...
 
-##
-
-`[IMAGE: an image that communicates "I have been extremely busy and slightly unhinged"]`
+![](ChatGPT Image Apr 22, 2026, 09_47_15 PM.png){fig-align="center" height="550"}
 
 ::: {.notes}
-"I've been very very busy this year — two new courses, one significantly reworked. I haven't turned off the course-design machine. This is the only thing I'm prepared to talk about."
+After Jotto. Gesture back at the game.
 
-Frame the scope: course design = assessment + learning activities. This talk is about learning activities. Assessment is begging for its own conversation — I'd love to hear what this room is doing there too.
+"That's how I want to teach. Every day. All the time."
 
-This is meant to be a community conversation, not a lecture.
+
+Pause. Then advance.
 :::
 
----
+<!-- SLIDE 4: Two visions — "That's how they think they should learn" -->
 
-<!-- SLIDE 4: The patient tutor -->
+## How they believe they learn...
 
-##
-
-`[IMAGE: an image that communicates "a patient, knowledgeable presence available at 3am"]`
+![](ChatGPT Image Apr 22, 2026, 09_39_51 PM.png){fig-align="center" height="550"}
 
 ::: {.notes}
-"Your students now have access to a knowledgeable, patient, infinitely available resource that will explain anything in the course. Any time. For free."
+"That's how they think they should learn."
 
-Don't name it. Let them fill in the blank.
+They value "learning efficiency" vs. "learning relationships"
 
-"What does that mean for what *you* do?"
+Let the juxtaposition sit.
 
-Sit with the question. Let it land.
+"This talk is about designing courses that reconcile these two realities."
 :::
 
----
+# Part A: Course Design
 
-<!-- SLIDE 5: The diagnosis -->
+<!-- SLIDE 5: Course design scope -->
 
-##
+## Course Design
 
-`[IMAGE: an image that communicates "something quietly eroding — presence, connection, participation"]`
+::: {style="font-size: 1.7em; text-align: center; margin-top: 2em;"}
+learning activities + assessments
+:::
 
 ::: {.notes}
-"I don't have data for this. But I've been noticing things. Maybe you have too."
 
-Four observations — anecdotal, not evidence:
-- Attendance is falling
-- Students are more reticent to participate in class
-- Piazza is quieter — students aren't asking each other questions anymore
-- And the one that stopped me cold: "what did Claude mean when they said..."
+I spent this last year building 2 new classes and revamping a 3rd, so my course design engine is still active -- it's the only thing I know how to talk about at this poitn.
 
-That last one. They're not forming a question to bring to the community. They're outsourcing the comprehension itself.
+Course design is two things: learning activities and assessment. Assessment is its own desperate conversation. Today is about learning activities.
 
-"If any of that resonates — I think it matters."
+Circle or highlight "learning activities" on the iPad.
+
+Maybe add + policies, but it's too early in the day for a nap. Also, these components aren't exactly disjoint. 
+:::
+
+
+<!-- SLIDE 6: The changing landscape -->
+
+## A Puzzle
+
+![](ChatGPT Image Apr 26, 2026, 09_08_14 PM.png){fig-align="center" height="500"}
+
+::: {.notes}
+
+idea for image -- each student is a puzzle piece, disassembled.
+
+"Our landscape is changing. Research and analysis is emerging, but here's what I've been noticing — and maybe you have too."
+
+- Quieter fora
+- Quieter classrooms
+- Quieter office hours
+- An overt dependence on external sources of content
+
+"Raise your hand if you've been noticing it too."
 
 Pause.
 
-"So I've been thinking about what we bring that a private tutor cannot. You just experienced one answer."
+"I view this as an acceleration of things that have been happening for a long time. In 2012 a student came to me with a YouTube video about DFS. It was a concise, correct example, delivered when the student wanted to hear it. That was just a foreshadowing."
 
-Gesture back toward the Jotto activity.
+"And it might be true that they learn the material well enough to meet the standards we've set for them — historically, proving to us that they know the content. But it turns out content was the low-hanging fruit. We have to work harder to teach them what's really important — what will differentiate them from the things that can be automated."
 :::
 
----
+<!-- SLIDE 7: The imperative -->
+
+## The Goal
+
+::: {style="font-size: 1.1em; margin-top: 1em; text-align: center;"}
+Design learning activities that provide something a private tutor **cannot**.
+:::
+
+![](lic_cloud.svg){fig-align="center" width="100%"}
+
+
+
+::: {.notes}
+This is the imperative. Not better content delivery — we've lost that race. But something a 1:1 interaction structurally cannot produce.
+
+(Jotto, and the ensuing discussion of decision trees is an example.)
+
+Then reveal the cloud. "All of this. None of it happens 1:1. None of it happens with a tutor. These are the things we can offer that nothing else can — and they all run counter to the isolation of individual learning."
+
+The rest of part A is about how to design more of them, but first I want to justify the approach, in case you're dubious.
+:::
 
 <!-- SLIDE 6: Community is the learning -->
 
-##
+## The Lesson of Puzzled Pint
 
-`[IMAGE: an image that communicates "a group solving something together that none of them could solve alone"]`
 
-::: {style="font-size: 0.85em; margin-top: 1em;"}
-> "The community doesn't support the learning. The community produces it."
+![](ChatGPT Image Apr 27, 2026, 10_29_29 PM.png){fig-align="center" width="100%"}
 
-Woolley et al. (2010, *Science*) &emsp;|&emsp; Lave & Wenger (1991) &emsp;|&emsp; Wegner, transactive memory
-:::
 
 ::: {.notes}
 
-in 2012 a student came to me with a youtube video about DFS. It was a concise, correct example, delivered when the student wanted to hear it. That was just a foreshadowing of today's situation, where students have 24/7 personal tutors for ALL material. And it was my headsup that I needed to improve my game. I've been trying ever since. 
+Sitting at a bar with old friends, new friends, former student, child's girlfriend... very diverse group. All were solving, and Rose and I "got" something... we BOTH had the feeling of conquest! It was simply great. Everyone engaged. joyful, motivated by social connections. 
 
-"A tutor gives one student one explanation. It cannot give you the room."
+I know that you all already know this, but I want to get us on the same page.
+This is not new, but now it's essential -- it used to be a nice-to-have. We have done all the low hanging fruit wrt pedagogy.
 
 Woolley et al.: groups have a measurable collective intelligence — a c-factor — not predicted by any individual member's intelligence. The group produces solutions no member could reach alone. (Puzzled Pint story.)
 
@@ -170,43 +203,73 @@ Wegner transactive memory: groups develop shared awareness of who knows what, di
 
 This is not a theme — it's the substrate. Everything that follows is designed for a room.
 
-"But here's the harder question — how do you convince a student who has already opted out? I have one answer. I suspect you have others. Let's talk about that too."
-
-Note: I record everything and livestream every class. Students who can't be there have full access. If they're not showing up, it's a choice. And that choice has a cost they may not know about.
+Sitting at a bar with old friends, new friends, former student, child's girlfriend... very diverse group. All were solving, and Rose and I "got" something... we BOTH had the feeling of conquest! It was simply great. Everyone engaged. joyful, motivated by social connections. 
 :::
 
----
+<!-- ============================================================ -->
+<!-- LEARNING IN COMMUNITY (Beat 5 in outline)
+<!-- ============================================================ -->
 
-## Here's my year. {#the-list}
+## Learning in Community
 
-::: {style="font-size: 0.55em; columns: 2; column-gap: 3em;"}
-| # | Topic | concept |
+::: {.fragment}
+Collective intelligence allows groups to outperform individuals on many tasks. &emsp; *(Woolley et al., 2010, Science)*
+:::
+::: {.fragment}
+Learning emerges through participation in communities of practice. &emsp; *(Lave & Wenger, 1991)*
+:::
+::: {.fragment}
+Cognitive division of labor in groups reduces individual load and supports flexible thinking. &emsp; *(Wegner, 1987)*
+:::
+
+
+::: {.notes}
+Three ideas, briefly:
+
+**Collective intelligence** — Woolley: groups have a measurable c-factor, not predicted by any individual's intelligence. The group produces solutions no member could reach alone.
+
+**Situated learning** — Lave & Wenger: learning is individual, but the conditions that produce the deepest learning are communal. Structurally impossible 1:1.
+
+**Transactive memory** — Wegner: groups develop shared awareness of who knows what. When someone you trust carries part of the cognitive load, your brain is freer to be creative. Also structurally impossible 1:1.
+
+**Computational Indigenuity** — Jon Corbett: an Indigenous Computing Framework is a story about how we are related to the various aspects of a computing system. Relationality is key. Everything is related. The same principle that makes Indigenous frameworks coherent makes a classroom coherent — the relations between people are the substance, not the scaffolding.
+
+Puzzled Pint — I'm a learner in this context too. I've experienced all of this firsthand.
+
+"Every workplace is a group project. We're practicing."
+:::
+
+
+## A Few Examples {#the-list}
+
+::: {style="font-size: 0.85em; columns: 2; column-gap: 0.5em;"}
+| # | Story | Concept |
 |---|-------|---------|
 | [1](#candy-hearts) | Candy Hearts Factory | stacks |
-| [2](#love-letters) | Love Letters in the Mountains | BFS |
+| [2](#love-letters) | Donkey and Dragon | BFS |
 | [3](#muddy-city) | Muddy City | MST |
 | [4](#sages) | Sages & Tricksters | logic |
 | [5](#billboard) | Billboard Hot 100 | ordered data |
 | [6](#heist) | The Great Data Heist | dictionaries |
 | [7](#isomorphism) | Graph Isomorphism Detective | graph theory |
-| [8](#birthday) | Birthday Paradox | probability |
+| [8](#birthday) | Birthdays | hashing |
 | [9](#jotto) | Jotto | decision trees |
 | [10](#genome-assembly) | Genome Assembly | Euler paths |
-| [11](#voronoi) | Voronoi / Seurat | BFS |
+| [11](#voronoi) | Voronoi Seurat | BFS |
 | [12](#mhall) | Mary Had a Little Lamb | Markov chains |
-| [13](#literary) | Literary Social Networks | NER + graphs |
-| [14](#campus-walks) | Campus Walks ★ | graphs |
-| [15](#bird-staging) | Bird Staging ★ | divide & conquer |
-| [16](#musical-influence) | Musical Influence Explorer ★ | BFS / DFS / SCC |
-| [17](#game-of-life) | Game of Life ★ | cellular automata |
-| [18](#pokemon) | Pokémon Explorer ★ | data frames |
-| [19](#genomic-intervals) | Genomic Interval Explorer ★ | interval trees |
-| [20](#eulers-formula) | Euler's Formula | planar graphs |
+| [13](#literary) | Literary Social Networks | NLP + graphs |
+| [14](#eulers-formula) | Slippery Puzzle | planar graphs |
+| [15](#campus-walks) | Campus Walks ★ | graphs |
+| [16](#bird-staging) | Bird Staging ★ | divide & conquer |
+| [17](#musical-influence) | Musical Influence Explorer ★ | BFS/DFS/SCC |
+| [18](#game-of-life) | Game of Life ★ | cellular automata |
+| [19](#pokemon) | Pokémon Explorer ★ | data frames |
+| [20](#genomic-intervals) | Genomic Interval Explorer ★ | interval trees |
 :::
 
-::: {style="font-size: 0.5em; margin-top: 0.5em;"}
+<p style="text-align: center; font-size: 2.0rem; color: #666; margin-top: 2rem;">
 ★ = independent project &emsp; *I've prepared 20 talks. Pick two.*
-:::
+</p>
 
 ::: {.notes}
 Audience participation. Hold up fingers for choice number. Take a photo. Tally.
@@ -218,59 +281,35 @@ The point of the list is the volume and variety — art, music, nature, wellness
 Prepared anchors: Euler's Formula (#20) and Candy Hearts (#1). Voronoi (#11) is available but not the default — it's strong on sensory design, weaker on community dependency.
 :::
 
----
-
 <!-- ============================================================ -->
 <!-- CANDY HEARTS FACTORY -->
 <!-- ============================================================ -->
 
-## Candy Hearts · Know the canon {#candy-hearts}
+## Example 1: Candy Hearts {.class-demo}
 
-`[IMAGE: standard stack diagram — push/pop, LIFO, textbook style]`
+<iframe src="class_demos/05_mon_stacks.html#/abstract-data-type-adt-stack"></iframe>
+<div class="slide-label">DSCI 221</div>
 
 ::: {.notes}
 "Here's how stacks are normally taught. A stack is a LIFO data structure. Push. Pop. Peek. This is what they can get anywhere, any time."
 :::
 
----
 
-## Candy Hearts · Find the joy
+## Example 1: Candy Hearts {.class-demo}
 
-`[IMAGE: Valentine's Day candy hearts on a conveyor belt — chaotic, colorful, festive]`
+<iframe src="class_demos/candy_hearts_story.html"></iframe>
+<div class="slide-label">DSCI 221</div>
 
 ::: {.notes}
 "It's the night before Valentine's Day at the candy heart factory. The hearts got mixed up on the conveyor belts."
 
 I love Advent of Code puzzles — this problem structure came from there. An agent helped me build the personalized instances. The vision was mine; the execution was collaborative.
+
+Each student gets a unique input — their own factory floor. They execute the stack operations themselves, in code. They don't know yet what they're building toward.
 :::
 
----
 
-## Candy Hearts · Make them build
-
-`[IMAGE: screenshot of the Marimo notebook workspace — input.txt with stacks and instructions visible]`
-
-::: {.notes}
-"Each student gets a unique input — their own factory floor, their own set of instructions. They execute the stack operations themselves, in code."
-
-The constructivist moment: they don't watch a stack being manipulated. They manipulate it. And they don't know yet what they're building toward.
-:::
-
----
-
-## Candy Hearts · Watch the metaphors
-
-`[IMAGE: conveyor belt → stack mapping — LIFO as "top of the belt", moving one at a time vs. all at once]`
-
-::: {.notes}
-"The conveyor belt is a stack. What does that metaphor hold? LIFO — the last heart placed is the first to move. What does it miss? Conveyor belts don't usually have a single exit point. Name the gap. Don't pretend the metaphor is perfect."
-
-The two-part puzzle — move one at a time vs. all at once — is where the metaphor earns its keep. Students feel the reversal before they can prove it.
-:::
-
----
-
-## Candy Hearts · Build a narrative
+## Example 1: Candy Hearts {.class-demo}
 
 `[IMAGE: the reveal — a student's output spelling their personalized wellness message]`
 
@@ -281,118 +320,65 @@ The two-part puzzle — move one at a time vs. all at once — is where the meta
 
 Every student's answer is different. Every student's message is personal — "you got this", "breathe", "keep going."
 
-They learned stacks. They also got a Valentine.
+The conveyor belt story uses actual student names. The preamble has their names in it. And what happened, without being asked: students started reading their lines aloud. Spontaneously. The room performed the story together.
+
+They learned stacks. They also got a Valentine. And they performed it for each other without anyone asking them to.
 :::
 
----
 
-<!-- ============================================================ -->
-<!-- VORONOI / SEURAT -->
-<!-- ============================================================ -->
+## Candy Hearts Recap
 
-## Voronoi / Seurat · Know the canon {#voronoi}
+- Thanks to "Advent of Code" for the problem idea.
+- Candy Factory Story was just the problem spec.
+- Students read aloud without my prompting!!
+- Wellness messaging is a theme.
 
-`[IMAGE: standard BFS pseudocode or diagram — queue, visited set, level-by-level expansion]`
+`[IMAGE: PL workspace screenshot — students writing the stack operations]`
 
 ::: {.notes}
-"Here's BFS. Queue. Visited. Expand level by level. This is in every textbook. They can get this any time."
+Each student gets a unique input — their own factory floor, their own set of instructions. They execute the stack operations themselves, in code. They don't know yet what they're building toward.
+
+NOTE: For the talk, have a pre-loaded screenshot or screen recording of the PL workspace ready.
 :::
 
----
 
-## Voronoi / Seurat · Find the joy
-
-`[IMAGE: Seurat's A Sunday on La Grande Jatte alongside a giraffe pattern, dragonfly wing, cell structure — Voronoi in nature and art]`
-
-::: {.notes}
-"Georges Seurat painted by placing dots of pure color, trusting the eye to blend them. He was doing something algorithmic before algorithms had names."
-
-"And then you look at a giraffe. A dragonfly wing. A soap bubble cluster. The same pattern, everywhere. BFS is not abstract — it's the thing that explains why the world looks the way it does."
-:::
-
----
-
-## Voronoi / Seurat · Make them build
-
-`[IMAGE: screenshot of the Voronoi pipeline — sample pixels, seed points, BFS spreading color, output image]`
-
-::: {.notes}
-"Students sample an image for seed points, then run BFS from each seed simultaneously — each cell claims territory as the search expands. The output is a Voronoi diagram that looks like a painting."
-
-The constructivist moment: they build the pipeline step by step. They don't know it will look beautiful until it does.
-:::
-
----
-
-## Voronoi / Seurat · Watch the metaphors
-
-`[IMAGE: BFS spreading vs. Voronoi region growing — the wave-front metaphor, where it holds and where it approximates]`
-
-::: {.notes}
-"BFS spreads level by level from a source. Voronoi regions grow outward from seeds. The metaphor holds beautifully for the intuition — and breaks slightly in the details (grid vs. continuous space, simultaneous multi-source BFS). Name the gap. Students who understand why the metaphor approximates understand both BFS and Voronoi better."
-:::
-
----
-
-## Voronoi / Seurat · Build a narrative
-
-`[IMAGE: student output — their own image transformed into pointillist art, alongside the Seurat original and a natural Voronoi pattern]`
-
-[← back to the list](#the-list)
-
-::: {.notes}
-"They wrote an algorithm. It made art. And now they can see BFS in a giraffe."
-
-That's the narrative arc: Seurat → algorithm → nature → you just wrote something that explains the world.
-:::
-
----
 
 <!-- ============================================================ -->
 <!-- EULER'S FORMULA -->
 <!-- ============================================================ -->
 
-## Euler's Formula · Know the canon {#eulers-formula}
+## Example 14: A Slippery Puzzle {.class-demo}
 
-$$V - E + F = 2$$
+<div style="display: flex; justify-content: center; margin: 1.5em 0;">
+<div style="background: white; border-radius: 8px; padding: 2em 3em; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+<div style="font-family: 'Quicksand', sans-serif; font-size: 4em; font-weight: 700; color: #825a9b; text-align: center; letter-spacing: 0.3em;">A &nbsp; B &nbsp; C</div>
+</div>
+</div>
 
-::: {.notes}
-"Euler's formula. It's in every discrete math textbook. Proof by induction. They can get it any time."
-
-Don't explain it yet. Just put it on the screen. Let it sit there.
-
-Then: "Now put it away. We're going to do something else."
-:::
-
----
-
-## Euler's Formula · Find the joy
-
-`[IMAGE: a stack of index cards — graphs on one side, three numbers on the other, held face-down]`
+<p style="text-align: center; font-size: 2.0rem; color: #8296a0; margin-top: 1.5em;">Find a rule that applies to everyone's set of numbers.</p>
 
 ::: {.notes}
-"I have a deck of 6×9 cards. On one side: a graph. On the other side: three numbers."
+"I have a deck of index cards. On one side: a graph. On the other side: three numbers."
 
-Distribute one card per student (or pair), graph-side up.
+Distribute one card per student (or pair), number-side up.
 
-"The graphs are for a different activity. Ignore them for now. Flip your card over. You've got three numbers."
+"Ignore the graph side. You've got three numbers. Find a rule that applies to everyone's set of numbers."
 
-The misdirection is the whole setup. They're about to figure out the formula themselves — they just don't know it yet.
+The misdirection is the whole setup. They're about to discover Euler's formula themselves — they just don't know it yet.
 :::
 
----
 
-## Euler's Formula · Make them build
+## Example 14: A Slippery Puzzle {.class-demo}
 
-::: {style="font-size: 1.3em; text-align: center; margin: 2em 0;"}
-**Your card has three numbers.**
+<div style="display: flex; justify-content: center; margin: 1.5em 0;">
+<div style="background: white; border-radius: 8px; padding: 1.5em 3em; box-shadow: 0 4px 20px rgba(0,0,0,0.3); text-align: left; min-width: 600px;">
+<div style="font-family: 'Quicksand', sans-serif; font-size: 3em; font-weight: 700; color: #825a9b; line-height: 1.6;">A: &emsp;&emsp;&emsp;&emsp;&emsp;<br>B: &emsp;&emsp;&emsp;&emsp;&emsp;<br>C: &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+</div>
+</div>
 
-What's the relationship between them?
-:::
+<p style="text-align: center; font-size: 2.0rem; color: #8296a0; margin-top: 1em;">How do the numbers relate to the graph on the flip side?</p>
 
 ::: {.notes}
-"Look at your numbers. What's the relationship between them?"
-
 Give them 60–90 seconds. Some will see it quickly, some won't.
 
 The relationship: one number + 2 equals the sum of the other two.
@@ -400,634 +386,86 @@ The relationship: one number + 2 equals the sum of the other two.
 
 Once a few have it, ask: "Does anyone want to share a conjecture?"
 
-Hear two or three. Don't confirm. Say: "Now flip your card."
+Hear two or three. Then hand the iPad to someone and ask them to write the rule. They write something like A + B = C + 2. The room sees the formula in a participant's handwriting, not yours.
+
+Don't confirm or correct. Say: "Now flip your card."
 :::
 
----
 
-## Euler's Formula · Watch the structure
+## Example 14: A Slippery Puzzle {.class-demo}
 
-`[IMAGE: two or three sample cards side by side — graph on one side, V/E/F numbers on the other, with the formula annotated]`
+::: {style="text-align: center; margin-top: 1em;"}
+*In any connected planar graph,*
 
-::: {.notes}
-"Now you have a graph AND three numbers. Which number is which?"
+$$V - E + F = 2$$
 
-This is the second puzzle: match the numbers to vertices, edges, and faces.
-
-"Test your hypothesis. Look at a neighbor's card. Does your rule hold for their graph too?"
-
-This is the moment community becomes epistemologically necessary. A student can't verify V - E + F = 2 from a single graph — they need other cases. Their neighbor's card is experimental data they couldn't generate alone.
-
-Common sticking point: the outer (infinite) face. "How many faces does a planar graph have?" Students almost always undercount by one until someone in the room names it.
-
-The formula breaks for non-planar graphs — that's worth naming briefly. "What happens with a graph you can't draw without crossings? Try to draw K₅."
+*where V is the number of vertices, E the number of edges, and F the number of faces.*
 :::
-
----
-
-## Euler's Formula · Build a narrative
-
-`[IMAGE: the room — students comparing cards, someone pointing at a graph, the formula written on a whiteboard by a student]`
 
 [← back to the list](#the-list)
 
 ::: {.notes}
-"Here's the thing: no one could verify this alone. You needed other people's cards. Their graphs were your experimental data."
+Now put the formula on screen. They already know it.
 
-The group converges on the answer. Someone will write the formula on the board before you do. Let them.
-
-Then pull up the slide from the beginning — V - E + F = 2 — and ask: "Did you need me to tell you that?"
-
-That's the narrative arc: a formula they've known for five minutes, discovered by the room.
-
-This is the cleanest example of community as epistemological necessity in the whole talk. The activity structurally requires neighbors. There is no solo path to verification.
+That's the narrative arc: a formula they've known for five minutes, discovered by the room. This is the cleanest example of community as epistemological necessity in the whole talk. The activity structurally requires neighbors. There is no solo path to verification.
 :::
 
----
+## Slippery Puzzle Recap
+
+- Proof by induction follows.
+- Originally designed as an ice-breaker. 
+- Students *need* to interact.
+- Why is it called "Slippery Puzzle?"
+
 
 <!-- ============================================================ -->
-<!-- PLACEHOLDER SECTIONS — fill in content later -->
+<!-- METHODOLOGY (Beat 9)
 <!-- ============================================================ -->
 
-## Love Letters · Know the canon {#love-letters}
-`[IMAGE placeholder]`
+## Unifying Features
 
-::: {.notes}
-BFS — canonical presentation.
+`[IMAGE: five moves, a repeating pattern, something that clicks into place]`
+
+::: {.fragment style="margin-top: 0.8em;"}
+1. **Acknowledge the canonical treatment** — *give them the starting place for independent study*
+2. **Situate in an authentic, motivating context** — *find something delightful*
+3. **Design for active knowledge construction** — *don't tell them anything, make them speculate*
+4. **Make structure perceptible** — *illuminate a metaphor, or make things sensory*
+5. **Culminate in authentic production** — *nurture their ability to build things*
 :::
-
----
-
-## Love Letters · Find the joy
-`[IMAGE placeholder]`
----
-
-## Love Letters · Make them build
-`[IMAGE placeholder]`
----
-
-## Love Letters · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Love Letters · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Muddy City · Know the canon {#muddy-city}
-`[IMAGE placeholder]`
-
-::: {.notes}
-MST — canonical presentation.
-:::
-
----
-
-## Muddy City · Find the joy
-`[IMAGE placeholder]`
----
-
-## Muddy City · Make them build
-`[IMAGE placeholder]`
----
-
-## Muddy City · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Muddy City · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Sages & Tricksters · Know the canon {#sages}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Logic / truth tables — canonical presentation.
-:::
-
----
-
-## Sages & Tricksters · Find the joy
-`[IMAGE placeholder]`
----
-
-## Sages & Tricksters · Make them build
-`[IMAGE placeholder]`
----
-
-## Sages & Tricksters · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Sages & Tricksters · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Billboard Hot 100 · Know the canon {#billboard}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Ordered data / lists — canonical presentation.
-:::
-
----
-
-## Billboard · Find the joy
-`[IMAGE placeholder]`
----
-
-## Billboard · Make them build
-`[IMAGE placeholder]`
----
-
-## Billboard · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Billboard · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## The Great Data Heist · Know the canon {#heist}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Dictionaries / hashing — canonical presentation.
-:::
-
----
-
-## The Heist · Find the joy
-`[IMAGE placeholder]`
----
-
-## The Heist · Make them build
-`[IMAGE placeholder]`
----
-
-## The Heist · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## The Heist · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Graph Isomorphism Detective · Know the canon {#isomorphism}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Graph theory / isomorphism — canonical presentation.
-:::
-
----
-
-## Isomorphism · Find the joy
-`[IMAGE placeholder]`
----
-
-## Isomorphism · Make them build
-`[IMAGE placeholder]`
----
-
-## Isomorphism · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Isomorphism · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Birthday Paradox · Know the canon {#birthday}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Probability / collision — canonical presentation.
-:::
-
----
-
-## Birthday Paradox · Find the joy
-`[IMAGE placeholder]`
----
-
-## Birthday Paradox · Make them build
-`[IMAGE placeholder]`
----
-
-## Birthday Paradox · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Birthday Paradox · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Jotto · Know the canon {#jotto}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Decision trees — canonical presentation.
-:::
-
----
-
-## Jotto · Find the joy
-`[IMAGE placeholder]`
----
-
-## Jotto · Make them build
-`[IMAGE placeholder]`
----
-
-## Jotto · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Jotto · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Genome Assembly · Know the canon {#genome-assembly}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Euler paths — canonical presentation.
-:::
-
----
-
-## Genome Assembly · Find the joy
-`[IMAGE placeholder]`
----
-
-## Genome Assembly · Make them build
-`[IMAGE placeholder]`
----
-
-## Genome Assembly · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Genome Assembly · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Mary Had a Little Lamb · Know the canon {#mhall}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Markov chains — canonical presentation.
-:::
-
----
-
-## Mary · Find the joy
-`[IMAGE placeholder]`
----
-
-## Mary · Make them build
-`[IMAGE placeholder]`
----
-
-## Mary · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Mary · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Literary Social Networks · Know the canon {#literary}
-`[IMAGE placeholder]`
-
-::: {.notes}
-NER + graphs — canonical presentation.
-:::
-
----
-
-## Literary · Find the joy
-`[IMAGE placeholder]`
----
-
-## Literary · Make them build
-`[IMAGE placeholder]`
----
-
-## Literary · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Literary · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Campus Walks · Know the canon {#campus-walks}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Graph routing — canonical presentation.
-:::
-
----
-
-## Campus Walks · Find the joy
-`[IMAGE placeholder]`
----
-
-## Campus Walks · Make them build
-`[IMAGE placeholder]`
----
-
-## Campus Walks · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Campus Walks · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Bird Staging · Know the canon {#bird-staging}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Divide & conquer — canonical presentation.
-:::
-
----
-
-## Bird Staging · Find the joy
-`[IMAGE placeholder]`
----
-
-## Bird Staging · Make them build
-`[IMAGE placeholder]`
----
-
-## Bird Staging · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Bird Staging · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Musical Influence Explorer · Know the canon {#musical-influence}
-`[IMAGE placeholder]`
-
-::: {.notes}
-BFS/DFS/SCC — canonical presentation.
-:::
-
----
-
-## Musical Influence · Find the joy
-`[IMAGE placeholder]`
----
-
-## Musical Influence · Make them build
-`[IMAGE placeholder]`
----
-
-## Musical Influence · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Musical Influence · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Game of Life · Know the canon {#game-of-life}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Cellular automata — canonical presentation.
-:::
-
----
-
-## Game of Life · Find the joy
-`[IMAGE placeholder]`
----
-
-## Game of Life · Make them build
-`[IMAGE placeholder]`
----
-
-## Game of Life · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Game of Life · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Pokémon Explorer · Know the canon {#pokemon}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Data frames / remote APIs — canonical presentation.
-:::
-
----
-
-## Pokémon · Find the joy
-`[IMAGE placeholder]`
----
-
-## Pokémon · Make them build
-`[IMAGE placeholder]`
----
-
-## Pokémon · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Pokémon · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-## Genomic Interval Explorer · Know the canon {#genomic-intervals}
-`[IMAGE placeholder]`
-
-::: {.notes}
-Interval trees — canonical presentation.
-:::
-
----
-
-## Genomic Intervals · Find the joy
-`[IMAGE placeholder]`
----
-
-## Genomic Intervals · Make them build
-`[IMAGE placeholder]`
----
-
-## Genomic Intervals · Watch the metaphors
-`[IMAGE placeholder]`
----
-
-## Genomic Intervals · Build a narrative
-`[IMAGE placeholder]`
-
-[← back to the list](#the-list)
-
----
-
-<!-- ============================================================ -->
-<!-- TABLE ACTIVITY -->
-<!-- ============================================================ -->
-
-##
-
-`[IMAGE: an image that communicates "people at tables, working together, a shared blank page waiting to be filled"]`
-
-::: {style="font-size: 0.8em; margin-top: 1em;"}
-You don't have to redesign your course. **Pick one thing.**
-
-::: {.fragment}
-| | |
-|--|--|
-| **1. The canon** | What's the standard treatment? What do your students already have access to? |
-| **2. The application** | What's a joyful, authentic context for this concept? |
-| **3. The puzzle** | Where can you create a gap — something they build rather than receive? |
-| **4. The metaphor** | What holds? What breaks? What could be made sensory? |
-| **5. The making** | What would students produce — that only works in a room? |
-:::
-:::
-
-::: {.notes}
-~5 min introductions at the table. ~10 min brainstorm. Brief share-out.
-
-The prompt: pick a topic you teach that feels dry, canonical, hard to make interesting. Run it through the five steps.
-
-You don't need to solve all five. Even one good answer to question 2 is enough to go home with.
-
-Listen carefully during share-out. Something will surface that you didn't anticipate. Name it. That's the c-factor, live, in this room.
-
-After share-out: "This is also how all 19 of my examples got built. Not all at once. One topic, one term, one joyful application at a time."
-
-Important: "I didn't design this methodology and then build the lessons. I built the lessons — and then noticed what they had in common. I've been tinkering all year, looking for the right approach. The methodology is a retrospective analysis — not a blueprint."
-
-This reframes the activity: you're not asking them to execute a framework. You're asking them to do what you did — try something, see what happens, trust the pattern will emerge.
-:::
-
----
-
-<!-- ============================================================ -->
-<!-- METHODOLOGY + CLOSING -->
-<!-- ============================================================ -->
-
-##
-
-`[IMAGE: an image that communicates "five moves, a repeating pattern, something that clicks into place"]`
 
 ::: {.fragment}
 **Community underlies all of it.** These moves are designed for a room.
 :::
 
-::: {.fragment style="margin-top: 0.8em;"}
-1. **Acknowledge the canonical treatment** — *start where they already are*
-2. **Situate in an authentic, motivating context** — *find something genuinely delightful*
-3. **Design for active knowledge construction** — *make them do something before you tell them anything*
-4. **Make structure perceptible** — *find the metaphor; know where it breaks; or make it sensory*
-5. **Culminate in authentic production** — *don't let them leave without having made something*
-:::
 
 ::: {.notes}
 "Let's name what just happened."
 
 This is recognition, not instruction. They've seen two examples. Each step should land as "oh — that's what that was."
 
-Deliver each step with the juxtaposition:
-
-1. The standard exposition is freely available. I assume students have it. My job is not to replicate it — it's to do something they couldn't get anywhere else.
-
-2. Self-Determination Theory calls this autonomy-supportive instruction grounded in real problems with real stakes. I call it: finding something I actually want to talk about. Those turn out to be the same thing.
-
-3. Constructivism. Loewenstein's information gap. Curiosity as a drive state. I call it: never give away the answer before they've felt the question.
-
-4. Gentner's structure-mapping: analogies teach relational schemas, not surface features. A good metaphor transfers; a bad one misleads. Name the gap. And sometimes — forget the metaphor. Make it sensory. Let them hear the hash table slow down.
-
-5. Situated learning. Legitimate peripheral participation. The community as cognitive environment. I call it: don't let them leave without having made something they didn't know they could make.
-
-Important framing: "I didn't design this methodology and then build the lessons. I built the lessons — and then noticed what they had in common. I've been tinkering all year, looking for the right approach. This is a retrospective analysis, not a blueprint."
-
-That makes it more trustworthy, not less. A pattern noticed in things that worked is more reliable than a framework imposed in advance.
-
-Step 1 is the new one. Steps 2–5 have always existed. But step 1 changes urgency when the canon is freely available 24/7.
-
-Many of you already do this. Here's what it's called, here's why it works, and here's why it matters more now than it ever did.
+Important framing: "I didn't design this methodology and then build the lessons. I built the lessons — and then noticed what they had in common. This is a retrospective analysis, not a blueprint."
 :::
 
----
+<!-- ============================================================ -->
+<!-- RESEARCH (Beat 10)
+<!-- ============================================================ -->
 
-##
+## Does it work?
 
 `[IMAGE: four small images — brain/dopamine, enthusiastic teacher, human pyramid, students working on something real]`
 
 ::: {.fragment}
-Curiosity → memory &emsp; *(Gruber et al., 2014, Neuron)*
+Curiosity enhances memory encoding. &emsp; *(Gruber et al., 2014, Neuron)*
 :::
 ::: {.fragment}
-Enthusiasm is contagious &emsp; *(Frenzel et al.)*
+Teacher enthusiasm is associated with increased student engagement and enjoyment. &emsp; *(Frenzel et al.)*
 :::
 ::: {.fragment}
-Metaphors teach structure &emsp; *(Gentner, 1983)*
+Metaphors support understanding by mapping structure between domains. &emsp; *(Gentner, 1983)*
 :::
 ::: {.fragment}
-Authentic problems motivate &emsp; *(PBL meta-analyses, 2024)*
+Authentic, real-world tasks often increase student motivation. &emsp; *(PBL meta-analyses, 2024)*
 :::
 
 ::: {.notes}
@@ -1036,43 +474,292 @@ Fast. These are explanations for what they just experienced, not arguments to co
 
 ---
 
-##
+<!-- ============================================================ -->
+<!-- THE HINGE (Beat 11) — end of Part A
+<!-- ============================================================ -->
 
-`[IMAGE: an image that communicates "hearing something / feeling something / a non-visual sensory experience of structure"]`
+## What's the fatal flaw?
+
+::: {.fragment}
+![](ChatGPT Image Apr 26, 2026, 08_59_03 PM.png){fig-align="center" height="500"}
+:::
 
 ::: {.notes}
-"Remote resources can explain. They can demonstrate. They cannot make you feel a data structure."
+"So — what's the fatal flaw?"
 
-BST boops. Hash table you can hear slowing down. Rainbow maze. BFS that paints a Seurat.
+Pause. Let the room answer. Someone will say it.
 
-Sensory understanding is a different epistemic channel. Structurally unavailable to a remote resource.
+"It only works if they're in the room."
+
+Nod.
+
+"Everything I just showed you — the methodology, the research, the activities — all of it assumes a room full of people. And that assumption is getting harder to defend every semester."
+
+I want to give us all a minute to consider and discuss "Where is everyone else?"
+:::
+
+
+<!-- ============================================================ -->
+<!-- PART B — Getting Students to Invest in the Community
+<!-- ============================================================ -->
+
+<!-- Beat 12: The confession -->
+
+# Part B: Attendance
+
+
+## I Was Missing
+
+![](ChatGPT Image Apr 28, 2026, 10_41_59 AM.png){fig-align="center" height="500"}
+
+
+::: {.notes}
+"I want to be honest about something. I am not the right person to lecture anyone about attendance."
+
+I was that student. I skipped class constantly. Not because I didn't care — I cared deeply about my education. But I was impulsive with my time. I overestimated my ability to catch up later. I told myself I'd go next time. And the longer I stayed away, the harder it was to go back.
+
+A top 10 biggest regret for me: I was enrolled in Concrete Math with Don Knuth the last time he taught it, and I attended approximately half the time. 
+
+He is an incredible and dazzling teacher. I loved the material. I simply didn't feel invested -- no one would care if i skipped, and I lacked the emotional maturity to recognize what I was giving up.
+
+:::
+
+## Why? 
+
+::: {.fragment}
+**No kinship** — they don't feel the room needs them.
+Belonging is essential. 
+:::
+
+::: {.fragment}
+**Present bias** — immediate vs. delayed gratification. A volleyball game with friends is more appealing in the moment, and the cost of missing class is invisible.
+:::
+
+::: {.fragment}
+**Overconfidence** — they believe they can catch up.
+:::
+
+::: {.fragment}
+**Physical barriers** — commutes or jobs.
+:::
+
+::: {.notes}
+Pivot from the personal to the general. "These are the patterns I see in my students now. They map to my own story. I'm guessing they map to some of yours too."
+
+Deliver each fragment lightly. No moralizing. The "none of them is laziness" frame is doing the work.
+
+What am I missing?
+
+:::
+
+<!-- Beat 13a: The extrinsic trap (move BEFORE asking what they've tried) -->
+
+## I Caved
+
+::: {style="font-size: 0.85em; columns: 2; column-gap: 0.5em;"}
+
+![](participation_vs_grade.png){fig-align="center" height="500"}
+
+
+\
+
+\ 
+
+
+But I am haunted by:
+
+>External rewards erode intrinsic motivation &emsp; *(Deci & Ryan, 2000)*
+
+
+:::
+
+::: {.notes}
+"I had never incentivized attendance until this term. I held out for years. And then this year I caved — I added an attendance threshold."
+
+Pause.
+
+"The minute they hit the threshold, attendance died. Like, immediately. Deci and Ryan could have told me that. External rewards erode the very motivation you're trying to encourage. They did tell me. I didn't listen."
+
+Then reveal the chart.
+
+"BUT — I ran the model on this term's data. Course score correlates with participation. r = 0.46. Real effect."
+
+Reveal the fragment caption.
+
+"So I was right to care. I was wrong about how. The question is no longer *whether* to drive attendance — it's *how* to do it without breaking it."
+
+The point of putting this BEFORE "what have you tried?" — I don't want anyone to share a strategy and then feel like I'm criticizing them. Now the table is clear: extrinsic doesn't work long-term; the goal still matters; let's hear what you're doing.
+:::
+
+
+
+<!-- Beat 13b: What have you tried? -->
+
+## What have *you* tried?
+
+::: {.notes}
+"Now that I've shown my cards — what have you tried? Shout it out."
+
+Take 4–5 answers. React genuinely. Pattern-spot aloud: "Ok — that's a carrot... that's a stick... that one's structural, that's interesting..."
+
+The earlier confession means people can share their extrinsic approaches without feeling judged — they know I've been there.
+:::
+
+
+<!-- Beat 14: What I'm trying instead -->
+
+## A Tentative Framework:
+
+::: {style="font-size: 0.85em; margin-top: 0.8em;"}
+
+::: {.fragment}
+**Structural design** — presence as a epistemologic necessity in learning activities
+:::
+
+::: {.fragment}
+**Making the invisible cost visible** — make sure community values are transparent
+:::
+
+::: {.fragment}
+**Social accountability** — create subgroups who expect to see them
+:::
+
+::: {.fragment}
+**Pre-commitment** — students declare why being in the room matters, refer to it often
+:::
+
+::: {.fragment}
+**Attendance Chart** — (Christine Goedhart) 
+
+::: {.fragment}
+**Recording as precondition** — absence must be a choice, not a constraint
+:::
+
+:::
+
+:::
+
+::: {.notes}
+
+Three things were going on for me:
+
+- **No kinship** — I didn't feel like the room needed me there, and I didn't feel like I needed it. Belonging is the entry point; kinship is the durable form. The designed classroom is the only learning community where belonging is the default — but kinship has to be cultivated. When students opt out, the cost is unevenly distributed. I didn't know that cost existed.
+
+- **Present bias** — I wasn't apathetic. I genuinely meant to show up. But the value of going with my friends to play volleyball is immediate; the value of being in the room is deferred and invisible.
+
+- **Overconfidence** — I believed I could learn it all on my own, later. Maybe I could learn the content — but I couldn't learn the thing I didn't know existed, and it took a LOT longer.
+
+"So now I'm on the other side of the desk, designing rooms that I desperately want students to be in. And the question is: how?"
+
+"But here's the harder question — how do you convince a student who has already opted out? I have one answer. I suspect you have others. Let's talk about that too."
+
+Note: I record everything and livestream every class. Students who can't be there have full access. If they're not showing up, it's a choice. And that choice has a cost they may not know about.
+
+
+Deliver each one with a self-rating:
+
+Structural design: "I think this one actually works. But I can't do it every day. It's an aspiration."
+
+Making cost visible: "I do this. I don't know if it works. But it feels honest."
+
+Named accountability: "I haven't tried this yet. I think it could be powerful — or weird."
+
+Pre-commitment: "This might be completely delusional. But Gollwitzer says written intentions outperform held beliefs, so maybe it's only mostly delusional."
+
+Recording: "This one I'm sure about. You can't ask people to show up and then punish them for having a life."
 :::
 
 ---
 
+<!-- Research supporting attendance strategies -->
+
 ##
 
-`[IMAGE: an image that communicates "honest uncertainty — not failure, just not knowing yet"]`
+::: {.fragment}
+External rewards erode intrinsic motivation &emsp; *(Deci & Ryan, 2000)*
+:::
+::: {.fragment}
+Written intentions outperform held beliefs &emsp; *(Gollwitzer, 1999)*
+:::
+::: {.fragment}
+Belonging is the strongest predictor of persistence &emsp; *(Walton & Cohen, 2011)*
+:::
+::: {.fragment}
+Kinship — relational accountability sustains presence &emsp; *(Wilson, 2008; Brayboy, 2005)*
+:::
+::: {.fragment}
+Present bias: immediate costs outweigh deferred value &emsp; *(O'Donoghue & Rabin, 1999)*
+:::
 
 ::: {.notes}
-"Does it work? Depends what you mean by work."
+Same format as the earlier research slides. Fast.
 
-"If you mean grades — honestly, probably not measurably better. A patient tutor can get most students to a passing grade. That's not what I'm after."
+Deci & Ryan: this is why graded attendance backfired. Extrinsic motivation crowds out intrinsic.
 
-"I'm after the student who comes back after term and says they didn't expect to find this interesting. I'm after the moment when something clicks for twenty people at once and you can feel it."
+Gollwitzer: implementation intentions — "I will go to class, and I've told Priya I'll be there" — categorically more robust than a held intention. This is the mechanism behind pre-commitment and named accountability.
 
-"I have no controlled study for that. What I have is a methodology grounded in research — and a room full of people who seemed to agree."
+Walton & Cohen: a brief belonging intervention in first year closed the achievement gap for underrepresented students over three years. Belonging isn't a nice-to-have. It's load-bearing.
 
-Invite the room: "Many of you have been doing versions of this for years. Is it working? I think we collectively have the evidence."
+Kinship — Shawn Wilson and Bryan Brayboy: Indigenous scholarship has long named what western research is just catching up to. Kinship is more than belonging — it's relational accountability. You show up because the others are *yours* and you are *theirs*. This connects directly to Corbett's framing: everything is related. The classroom becomes coherent the same way an Indigenous Computing Framework does — through relations, not transactions.
 
-Then push further: "I don't have data. But I think we should. And figuring out what to measure — and how — might be the most important thing this community could do right now."
-
-This reframes "I don't have data" from an apology into an open research question the room owns together. These are researchers and educators — they're equipped to think about measurement. Invite them to.
-
-The question isn't whether this methodology produces better grades than a private tutor. It's whether it produces something a private tutor structurally cannot. That's not a measurement problem — it's a definitional one. We're not competing on the same axis. But if we believe what siloed learning costs students is real, then measuring it is our collective responsibility.
+O'Donoghue & Rabin: present bias is not laziness. Students genuinely intend to come. The asymmetry between immediate cost and deferred value is structural. Design has to account for it.
 :::
 
 ---
+
+<!-- Kinship in CS practice -->
+
+## Kinship in practice
+
+::: {style="font-size: 0.95em; margin-top: 1.2em;"}
+
+::: {.fragment}
+**Knowledge reciprocity** — students document bugs and fixes in a shared classroom knowledge base. Their insights sustain everyone else's progress.
+:::
+
+::: {.fragment style="margin-top: 0.6em;"}
+**Peer mentorship by visiting** — students move between groups to listen and support, not to solve. The goal is presence, not rescue.
+:::
+
+:::
+
+::: {.notes}
+"Kinship sounds abstract. Here's what it can look like in a CS classroom."
+
+**Knowledge reciprocity:** Instead of solo-coding for a grade — extraction — students contribute to a shared knowledge base. Bugs they hit, fixes they found. The next student who hits the same wall finds it because someone else was there. Presence becomes contribution; absence becomes a small absence in the shared resource.
+
+**Visiting (not solving):** Structured time where students move between groups. The rule is listen, ask, support — don't take over. This is the opposite of the "TA who fixes everything" model. It positions every student as someone whose presence matters to someone else.
+
+These ideas are drawn from Indigenous methodologies (Wilson, Brayboy) and the Computer Science Teachers Association's work on relational pedagogy. They name a different theory of why students should be in the room — not because they owe me attendance, but because they owe each other presence.
+:::
+
+---
+
+<!-- Beat 15: Table activity — attendance -->
+
+## Your turn
+
+::: {style="font-size: 0.9em; margin-top: 1em;"}
+
+1. What's working for you right now? What gets students to show up — and stay engaged?
+2. What have you tried that backfired?
+3. If you could design one structural feature — built into the lesson, not the syllabus — that makes presence matter, what would it be?
+
+:::
+
+::: {.notes}
+"I've shared my ideas. But I said at the start: I suspect this room has better ones. Let's find out."
+
+~5 min introductions. ~10 min brainstorm. Brief share-out.
+
+This is the mirror moment: the talk itself is a demonstration of what it's arguing for. The table activity in the first half would have been about lesson design — fine, but familiar. Placing it here, on a problem nobody has solved, makes the stakes real.
+
+"Something will come out of this conversation that none of us walked in with. When it does — that's the c-factor. Live. In this room."
+:::
+
+---
+
+<!-- Beat 16: Closing -->
 
 ##
 

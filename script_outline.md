@@ -38,46 +38,31 @@ My script: reappear at the back of the room and ask everyone to turn to look at 
 > "Welcome! I'm Cinda, I teach CS at UBC, and I'm here today to discuss our common challenges. Isn't it funny that you know EXACTLY what they are!!"
 *Pause.*
 
----
+## 2. Two visions of learning  *(~5 min)*
 
-## 2. Framing —   *(~3 min)*
+> "That's how I want to teach. Every day. All the time."
 
-I've had a crazy year! Two new courses, another significantly reworked. My course-design motor is still on overdrive so it's the only thing I'm prepared to talk about.
+*Show image: student alone at 3am with laptop, patient AI tutor glowing on the screen.*
+
+> "That's how they think they should learn."
+
+*Let the juxtaposition sit.*
+
+> "This talk is about reconciling these two visions of learning."
 
 ::: notes
-I will be presenting from my ipad, so i can circle the Learning Activities part of the equation. SHould i take a poll to see what people are most interested in hearing about? LOL if they say assessment!!
+The Jotto game IS the first vision — communal, embodied, joyful, impossible alone. The 3am image IS the second — private, efficient, always available, and genuinely effective at delivering content. Neither is wrong. But they're not the same thing, and we're losing ground on the first one.
+:::
+
+I've had a crazy year — two new courses, another significantly reworked. My course-design motor is still on overdrive so it's the only thing I'm prepared to talk about.
+
+::: notes
+I will be presenting from my ipad, so i can circle the Learning Activities part of the equation. Should i take a poll to see what people are most interested in hearing about? LOL if they say assessment!!
 :::
 
 Name the scope (on a slide): course design = assessment + learning activities. This talk is about **learning activities**. Assessment is its own desperate conversation — worth having, just not today.
 
-::: notes
-does the next bit go on a slide as foreshadowing, or should i just reveal and review?
-:::
-Set the contract:
-- A methodology
-- A list of examples — you pick two to go deeper on
-- Research that explains why it should work
-- One big reframe about what's changed
-
-*"I've actually prepared 20 talks today. You're choosing 2."*
-
----
-
-## 3. The student who's doing fine  *(~5 min)*
-
-::: notes
-Why are we revisiting learning activities? Didn't we solve this with flipped classrooms? Flipped == content outside, practice inside. Good, but we need to evolve those ideas to re-examine the purpose of the room (not just practice).
-:::
-
-> "Imagine a student who never comes to class. Never posts on Piazza. Never joins a study group. And scores well on assessments. They're not struggling. They're not cheating. They have a patient, knowledgeable, infinitely available resource — and it's 'working'."
-
-*Pause. Let it sit.*
-
-> "So what's missing?"
-
-*Don't answer yet. Let the room feel the discomfort of not having an easy answer.*
-
-That student is not a hypothetical. You're seeing them multiply:
+That student with the tutor is not a hypothetical. You're seeing them multiply:
 - Attendance is falling
 - Piazza is quieter — students aren't asking each other questions anymore
 - Students are more reticent to participate when they are in the room
@@ -87,7 +72,7 @@ That student is not a hypothetical. You're seeing them multiply:
 
 *Pause.*
 
-> "The student who's doing fine alone — they're getting the grades. But they're missing something they don't know exists. And it's our job to invite them to it."
+> "They're getting the grades. But they're missing something they don't know exists. And it's our job to build a room worth being in."
 
 ---
 
@@ -123,14 +108,14 @@ The point is volume and variety: art, music, nature, wellness, mystery, games, b
 
 *Five slides, one per methodology step. Don't announce the framework — let the design decisions speak.*
 
-**i. Know the canon**
+**i. Textbook basics**
 Here's how stacks are normally taught. LIFO. Push. Pop. Peek. They can get this anywhere, any time. I assume they have it.
 
 ::: notes
 show the Pez slide (classic stack ADT slide)
 ::: 
 
-**ii. Find the joy**
+**ii. Make it magical**
 It's the night before Valentine's Day at the candy heart factory. The hearts got mixed up on the conveyor belts.
 
 *[Candy Hearts story and setup — conveyor belts as stacks, personalized wellness message as output.]*
@@ -171,7 +156,7 @@ What word is spelled out by the letters on top of each belt? Every student's ans
 
 *Same five-step structure, but reordered — the canon comes last. By now the pattern starts to feel familiar — audience begins to recognize it before it's been named.*
 
-**i. Find the joy**
+**i. Make it magical**
 *[Distribute index cards — graph on one side, three numbers on the other, graph-side up.]*
 
 > "The graphs are for a different activity. Ignore them. Flip your card over. You've each got three numbers. What relationship between them holds for every card in the room?"
@@ -201,7 +186,7 @@ I'll have someone write it on my tablet. Need slides:
 
 > "No one could verify this alone. You needed other people's cards. Their graphs were your experimental data. The room was the instrument."
 
-**v. Know the canon**
+**v. Textbook basics**
 *Now* put V − E + F = 2 on screen.
 
 > "Did you need me to tell you that?"
@@ -243,30 +228,7 @@ This is the standard textbook formula. Proof by induction. They can get it anywh
 
 ---
 
-## 10. Table activity  *(~15 min)*
-
-**[TABLE ACTIVITY]**
-
-> "You don't have to redesign your course. Pick one topic you teach — something canonical, something a little dry. Run it through the five steps."
-
-*Template at each table:*
-1. What's the canonical treatment? What do students already have access to?
-2. What's a joyful, authentic application?
-3. Where can you inject a puzzle or a gap?
-4. What metaphor holds? What does it miss? What could be made sensory?
-5. What would students make or do — that only works in a room?
-
-*~5 min introductions, ~10 min brainstorm, brief share-out.*
-
-> "Something will come out of this activity that surprises you. When it does — that's the c-factor. Live. In this room."
-
-::: notes
-should i seed the tables with topical ideas? or maybe people just want to share what they're already doing?
-:::
-
----
-
-## 11. Why it works — the research  *(~5 min)*
+## 10. Why it works — the research  *(~5 min)*
 
 > "I promised you research. Here it is."
 
@@ -290,55 +252,137 @@ should i seed the tables with topical ideas? or maybe people just want to share 
 
 ---
 
-## 12. Does it work? — two honest questions  *(~6 min)*
+## 11. What's the fatal flaw with this approach?  *(~3 min)*
 
-### 12a. Does the pedagogy work?
+> "So — what's the fatal flaw?"
 
-> "Does this work? Depends what you mean."
+*Pause. Let the room answer. Someone will say it.*
 
-If you mean grades — probably not measurably better than a patient tutor. That's not the goal.
+> "It only works if they're in the room."
 
-The goal is the student who comes back after the term and says they didn't expect to find this interesting. The moment in the room when something clicks for twenty people at once and you can feel it.
+*Nod.*
 
-I have no controlled study for that. What I have is a methodology grounded in research that says *why it should happen* — and a room full of people who seemed to agree.
+> "Everything I just showed you — the methodology, the research, the activities — all of it assumes a room full of people. And that assumption is getting harder to defend every semester."
 
-Separate the claims: the evidence exists for the underlying mechanisms — Gruber, Loewenstein, Frenzel, Gentner, PBL meta-analyses. The claim isn't that these specific lessons work. It's that they were designed according to principles that have evidence behind them.
+---
 
-> "Many of you have been doing versions of this for years. Is it working? I think we collectively have the evidence, even if none of us has published it."
+# ═══════════════════════════════════════════
+# HALF 2 — Getting Students to Invest in the Community
+# ═══════════════════════════════════════════
 
-*Invite the room. This is itself LIC in action.*
+*The first half was about designing for community. This half is about what happens when students don't show up to experience it. Tone shift: from confident practitioner to honest confessor.*
 
-### 12b. Does it work if they aren't there?
+---
+
+## 12. The attendance problem — a confession  *(~5 min)*
 
 > "All of this fails if they aren't in the room. And getting them in the room is maybe our hardest problem right now."
 
-Three research ideas that frame the problem — and point toward solutions:
+*Pause.*
 
-- **Present bias** — students aren't apathetic. On day 1 they genuinely mean to show up. But the cost of staying in bed is immediate and concrete; the value of LIC is real but deferred and invisible. Conviction doesn't survive that asymmetry without help. The design challenge is: how do we help students act on convictions they already hold?
+> "I want to be honest about something. I am not the right person to lecture anyone about attendance."
 
-- **Extrinsic vs. intrinsic motivation** — Deci & Ryan (2000): external rewards for intrinsically motivatable behaviors erode intrinsic motivation over time. Graded attendance may get bodies in seats, but it frames presence as a transaction. The strategies that work long-term are the ones that align with the student's own values — not ones that add an external cost to absence.
-
-- **Belongingness** — informal learning communities (Discord, study groups) are self-selecting. You have to find them, be invited, feel welcome. The designed classroom is the only learning community where belonging is the default. For first-gen students, for students from underrepresented groups, for anyone who doesn't yet know anyone — the classroom may be the only community they have access to. When they opt out, the cost is unevenly distributed.
-
-> "I think this area is rich for innovation and study. We need intrinsic strategies — ways to make the invisible cost of absence visible, to build peer accountability that's relational rather than institutional, to design lessons where presence is structurally necessary. I have some ideas. I suspect this room has better ones."
+I was that student. I skipped class constantly. Not because I didn't care — I cared deeply about my education. But I was impulsive with my time. I overestimated my ability to catch up later. I told myself I'd go next time. And the longer I stayed away, the harder it was to go back — because now I didn't know anyone, and I felt like I'd missed too much.
 
 ::: notes
-**Ideas to have ready if the conversation opens up (time permitting):**
+This is the vulnerable moment. Don't rush it. The room needs to feel that this isn't a solved problem being delivered from authority — it's a shared problem being explored by someone who has been on both sides of it.
+:::
 
-- **Structural design** — make presence epistemologically necessary. In the Euler activity, your card is someone else's experimental data. Your absence is visible to the community. No willpower required. Design aspiration: for every lesson, ask — is there a version where absence is felt by the group?
+Three things were going on — and I see them in my students now:
 
-- **Named social accountability** — a specific person who expects to see them. Peer-to-peer, not to you. The only ask: if you're not coming, text them. This makes skipping a deliberate, visible choice rather than a passive drift. Gollwitzer's implementation intentions research: "I will go to class, and I've told Priya I'll be there" is categorically more robust than a held intention.
+- **Belongingness** — I didn't feel like the room needed me there. Informal learning communities (Discord, study groups) are self-selecting. The designed classroom is the only learning community where belonging is the default. For first-gen students, for students from underrepresented groups, for anyone who doesn't yet know anyone — the classroom may be the only community they have access to. When they opt out, the cost is unevenly distributed. I didn't know that cost existed.
 
-- **Making the invisible cost visible, repeatedly** — end of class, name what just happened that can't happen on a recording. "You figured that out together. That's not in my slides and it's not on any recording." Start of class: "34 people here. That's 34 perspectives on this problem."
+- **Present bias** — I wasn't apathetic. On day 1 I genuinely meant to show up. But the cost of staying in bed is immediate and concrete; the value of being in the room is real but deferred and invisible. Conviction doesn't survive that asymmetry without help. I know this because I lived it.
 
-- **Pre-commitment when conviction is high** — early in term, students write briefly for themselves: why LIC matters to them, what they're there for. Return it mid-term. Gollwitzer (1999): written implementation intentions significantly outperform held beliefs.
+- **Overconfidence** — I genuinely believed I could learn it all on my own, later. And maybe I could learn the *content* — but I couldn't learn the thing I didn't know existed. The thing that only happens in a room.
 
-- **Recording/livestream as precondition** — I record everything and livestream every class. Students who genuinely can't be there have full access to content. This matters: the conversation about attendance only works if absence is a choice, not a constraint.
+> "So now I'm on the other side of the desk, designing rooms that I desperately want students to be in. And the question is: how?"
+
+---
+
+## 13. What have you tried?  *(~8 min)*
+
+> "Raise your hand if you've ever taken attendance."
+
+*Look around. Nod.*
+
+> "What have you tried? Shout it out."
+
+*Take 4–5 answers from the floor. Listen. React genuinely. As they come in, start pattern-spotting aloud:*
+
+> "Ok — that's a carrot... that's a stick... that one's structural, that's interesting..."
+
+*Let the room hear the two categories emerge naturally: extrinsic (grades, penalties, rewards) vs. structural/relational (design choices, peer accountability, belonging).*
+
+> "I want to confess something. I had never incentivized attendance until this term. I held out for years. And then this year I caved — I added an attendance threshold."
+
+*Pause.*
+
+> "The minute they hit the threshold, attendance died. Like, *immediately*."
+
+*Let the room laugh. They will.*
+
+> "So I ran the experiment for you. Extrinsic motivation gets bodies in seats until the incentive is met, and then it evaporates — because you've framed presence as a transaction, and they optimized the transaction. Deci and Ryan could have told me that. They did tell me that. I didn't listen."
+
+::: notes
+The point isn't that extrinsic motivation is always wrong — some people in the room may use it successfully. The point is that *I* tried it, it confirmed the research I already knew, and now I'm looking for something better. Stay in the confession. Don't generalize to "you shouldn't do this."
 :::
 
 ---
 
-## 13. Closing  *(~2 min)*
+## 14. What I'm trying instead  *(~5 min)*
+
+> "So here's what I'm trying now — in roughly descending order of how confident I am that it works."
+
+**Structural design** — make presence epistemologically necessary. In the Euler activity, your card is someone else's experimental data. Your absence is felt by the community. No willpower required. Aspiration: for every lesson, ask — is there a version where absence matters to the group?
+
+> "I think this one actually works. But I can't do it every day. It's an aspiration."
+
+**Making the invisible cost visible** — end of class, name what just happened that can't happen on a recording. "You figured that out together. That's not in my slides." Start of class: "34 people here. That's 34 perspectives on this problem."
+
+> "I do this. I don't know if it works. But it feels honest."
+
+**Named social accountability** — a specific person who expects to see them. Peer-to-peer, not institutional. If you're not coming, text them. Skipping becomes a deliberate, visible choice rather than a passive drift.
+
+> "I haven't tried this yet. I think it could be powerful — or weird. I'm not sure."
+
+**Pre-commitment when conviction is high** — early in term, students write for themselves: why being in the room matters to them. Return it mid-term.
+
+> "This might be completely delusional. But Gollwitzer says written intentions outperform held beliefs, so maybe it's only mostly delusional."
+
+**Recording as precondition** — I record everything and livestream every class. Students who can't be there have full access to content. This matters: the conversation about attendance only works if absence is a choice, not a constraint. The recording proves that what I'm asking for isn't *access* — it's *presence*.
+
+> "This one I'm sure about. You can't ask people to show up and then punish them for having a life."
+
+---
+
+## 15. Table activity — the attendance challenge  *(~15 min)*
+
+**[TABLE ACTIVITY]**
+
+> "I've shared my ideas. But I said at the start: I suspect this room has better ones. Let's find out."
+
+*Template at each table:*
+1. What's working for you right now? What gets students to show up — and stay engaged?
+2. What have you tried that backfired?
+3. If you could design one structural feature — something built into the lesson, not the syllabus — that makes presence matter, what would it be?
+
+*~5 min introductions, ~10 min brainstorm, brief share-out.*
+
+> "Something will come out of this conversation that none of us walked in with. When it does — that's the c-factor. Live. In this room."
+
+::: notes
+This is the mirror moment: the talk itself is a demonstration of what it's arguing for. The table activity in the first half would have been about lesson design — fine, but familiar. Placing it here, on a problem nobody has solved, makes the stakes real. These ideas might actually change someone's practice.
+
+Seed tables with a few provocations if conversation stalls:
+- "What if you designed a lesson where one student's absence made the activity literally impossible?"
+- "What's the difference between a student who watches the recording and one who was there?"
+- "Is there a way to make the social cost of absence visible without making it punitive?"
+:::
+
+---
+
+## 16. Closing  *(~2 min)*
 
 > "A tutoring system answers your question.
 
@@ -351,6 +395,8 @@ Three research ideas that frame the problem — and point toward solutions:
 ## References
 
 - Barsalou, L. W. (2008). Grounded cognition. *Annual Review of Psychology*, 59, 617–645.
+- Brayboy, B. M. J. (2005). Toward a Tribal Critical Race Theory in education. *The Urban Review*, 37(5), 425–446. Kinship as central to Indigenous educational frameworks.
+- Corbett, J. *Computational Indigenuity: Indigenous Computing Frameworks*. WCCCE talk. Relationality as substrate; everything is related.
 - Deci, E. L., & Ryan, R. M. (2000). Self-determination theory. *Psychological Inquiry*. https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf
 - Frenzel, A. C., et al. Teacher enthusiasm → SDT needs. https://pmc.ncbi.nlm.nih.gov/articles/PMC10105573/
 - Gentner, D. (1983). Structure-mapping: A theoretical framework for analogy. *Cognitive Science*, 7(2), 155–170.
@@ -358,8 +404,11 @@ Three research ideas that frame the problem — and point toward solutions:
 - Gruber, M. J., Gelman, B. D., & Ranganath, C. (2014). States of curiosity modulate hippocampus-dependent learning via the dopaminergic circuit. *Neuron*, 84(2), 486–496. https://pubmed.ncbi.nlm.nih.gov/25284006/
 - Lave, J., & Wenger, E. (1991). *Situated Learning: Legitimate Peripheral Participation*. Cambridge University Press.
 - Loewenstein, G. (1994). The psychology of curiosity. *Psychological Bulletin*, 116(1), 75–98. Overview: https://pmc.ncbi.nlm.nih.gov/articles/PMC4635443/
+- O'Donoghue, T., & Rabin, M. (1999). Doing it now or later. *American Economic Review*, 89(1), 103–124.
 - PBL motivation meta-analysis (2024). *Educational Psychology Review*. https://link.springer.com/article/10.1007/s10648-024-09864-3
 - Design thinking meta-analysis (2024). *Nature/Humanities & Social Sciences*. https://www.nature.com/articles/s41599-024-03237-5
 - Rosenthal, A. (TED2023). *The joyful, perplexing world of puzzle hunts*. https://www.ted.com/talks/alex_rosenthal_the_joyful_perplexing_world_of_puzzle_hunts *(URL unverified)*
+- Walton, G. M., & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. *Science*, 331(6023), 1447–1451.
+- Wilson, S. (2008). *Research is Ceremony: Indigenous Research Methods*. Fernwood Publishing. Relational accountability and kinship as foundational principles.
 - Wegner, D. M. (1987). Transactive memory: A contemporary analysis of the group mind. In B. Mullen & G. R. Goethals (Eds.), *Theories of Group Behavior*. Springer.
 - Woolley, A. W., Chabris, C. F., Pentland, A., Hashmi, N., & Malone, T. W. (2010). Evidence for a collective intelligence factor in the performance of human groups. *Science*, 330(6004), 686–688.
