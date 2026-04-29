@@ -35,16 +35,6 @@ You are the wordle master and i'm going to try to guess your word. Pick one word
 
 Return to the BACK of the room. They turn to look.
 
-Advance to the next slide — decision tree. Play Jotto from the back of the room. Ask your questions. Narrow it down. Guess the word.
-
-Win or lose — either is interesting.
-
-Then walk to the front.
-
-"That's a decision tree. And that only works in a room."
-
-Pause.
-
 :::
 
 <!-- SLIDE 2: JOTTO decision tree -->
@@ -88,7 +78,6 @@ After Jotto. Gesture back at the game.
 
 "That's how I want to teach. Every day. All the time."
 
-
 Pause. Then advance.
 :::
 
@@ -103,7 +92,7 @@ Pause. Then advance.
 
 They value "learning efficiency" vs. "learning relationships"
 
-Let the juxtaposition sit.
+I know this is close because my own student/kid said, "this is very me coded."
 
 "This talk is about designing courses that reconcile these two realities."
 :::
@@ -122,11 +111,11 @@ learning activities + assessments
 
 I spent this last year building 2 new classes and revamping a 3rd, so my course design engine is still active -- it's the only thing I know how to talk about at this poitn.
 
-Course design is two things: learning activities and assessment. Assessment is its own desperate conversation. Today is about learning activities.
-
-Circle or highlight "learning activities" on the iPad.
+Course design is two things: learning activities and assessment. Assessment is its own desperate conversation. Today is about learning activities. 
 
 Maybe add + policies, but it's too early in the day for a nap. Also, these components aren't exactly disjoint. 
+
+Circle or highlight "learning activities" on the iPad.
 :::
 
 
@@ -169,11 +158,11 @@ Design learning activities that provide something a private tutor **cannot**.
 
 
 ::: {.notes}
-This is the imperative. Not better content delivery — we've lost that race. But something a 1:1 interaction structurally cannot produce.
+This is the imperative. Not better content delivery -- we no longer have the monopoly on that. But something a 1:1 interaction structurally cannot produce.
 
 (Jotto, and the ensuing discussion of decision trees is an example.)
 
-Then reveal the cloud. "All of this. None of it happens 1:1. None of it happens with a tutor. These are the things we can offer that nothing else can — and they all run counter to the isolation of individual learning."
+"All of this. None of it happens 1:1. None of it happens with a tutor. These are the things we can offer that nothing else can — and they all run counter to the isolation of individual learning."
 
 The rest of part A is about how to design more of them, but first I want to justify the approach, in case you're dubious.
 :::
@@ -189,6 +178,8 @@ The rest of part A is about how to design more of them, but first I want to just
 ::: {.notes}
 
 Sitting at a bar with old friends, new friends, former student, child's girlfriend... very diverse group. All were solving, and Rose and I "got" something... we BOTH had the feeling of conquest! It was simply great. Everyone engaged. joyful, motivated by social connections. 
+
+Also, after all this time together, we know who likes what kinds of puzzles! (Well, Ellen can do all of them, but she's really patient with the rest of us.)
 
 I know that you all already know this, but I want to get us on the same page.
 This is not new, but now it's essential -- it used to be a nice-to-have. We have done all the low hanging fruit wrt pedagogy.
@@ -212,15 +203,12 @@ Sitting at a bar with old friends, new friends, former student, child's girlfrie
 
 ## Learning in Community
 
-::: {.fragment}
-Collective intelligence allows groups to outperform individuals on many tasks. &emsp; *(Woolley et al., 2010, Science)*
-:::
-::: {.fragment}
-Learning emerges through participation in communities of practice. &emsp; *(Lave & Wenger, 1991)*
-:::
-::: {.fragment}
-Cognitive division of labor in groups reduces individual load and supports flexible thinking. &emsp; *(Wegner, 1987)*
-:::
+
+[**Collective intelligence**]{.purple} allows groups to outperform individuals on many tasks. &emsp; *(Woolley et al., 2010, Science)*
+
+Learning emerges through participation in [**communities of practice**]{.orange}. &emsp; *(Lave & Wenger, 1991)*
+
+[**Cognitive division of labor**]{.green} in groups reduces individual load and supports flexible thinking. &emsp; *(Wegner, 1987)*
 
 
 ::: {.notes}
@@ -278,7 +266,7 @@ The joke lands here: "I've actually prepared 20 talks today. You're choosing 2."
 
 The point of the list is the volume and variety — art, music, nature, wellness, mystery, games, biology, literature. Don't read it aloud. Let them scan it. Give them 20 seconds.
 
-Prepared anchors: Euler's Formula (#20) and Candy Hearts (#1). Voronoi (#11) is available but not the default — it's strong on sensory design, weaker on community dependency.
+Prepared anchors: Euler's Formula (#14) and Candy Hearts (#1). Voronoi (#11) is available but not the default — it's strong on sensory design, weaker on community dependency.
 :::
 
 <!-- ============================================================ -->
@@ -313,8 +301,6 @@ Each student gets a unique input — their own factory floor. They execute the s
 
 `[IMAGE: the reveal — a student's output spelling their personalized wellness message]`
 
-[← back to the list](#the-list)
-
 ::: {.notes}
 "What word is spelled out by the letters on top of each belt?"
 
@@ -333,7 +319,6 @@ They learned stacks. They also got a Valentine. And they performed it for each o
 - Students read aloud without my prompting!!
 - Wellness messaging is a theme.
 
-`[IMAGE: PL workspace screenshot — students writing the stack operations]`
 
 ::: {.notes}
 Each student gets a unique input — their own factory floor, their own set of instructions. They execute the stack operations themselves, in code. They don't know yet what they're building toward.
@@ -370,9 +355,9 @@ The misdirection is the whole setup. They're about to discover Euler's formula t
 
 ## Example 14: A Slippery Puzzle {.class-demo}
 
-<div style="display: flex; justify-content: center; margin: 1.5em 0;">
-<div style="background: white; border-radius: 8px; padding: 1.5em 3em; box-shadow: 0 4px 20px rgba(0,0,0,0.3); text-align: left; min-width: 600px;">
-<div style="font-family: 'Quicksand', sans-serif; font-size: 3em; font-weight: 700; color: #825a9b; line-height: 1.6;">A: &emsp;&emsp;&emsp;&emsp;&emsp;<br>B: &emsp;&emsp;&emsp;&emsp;&emsp;<br>C: &emsp;&emsp;&emsp;&emsp;&emsp;</div>
+<div style="display: flex; justify-content: center; margin: 1.2em 0;">
+<div style="background: white; border-radius: 8px; padding: 1.2em 3em; box-shadow: 0 4px 20px rgba(0,0,0,0.3); text-align: left; min-width: 600px;">
+<div style="font-family: 'Quicksand', sans-serif; font-size: 3em; font-weight: 700; color: #825a9b; line-height: 1.2;">A: &emsp;&emsp;&emsp;&emsp;&emsp;<br>B: &emsp;&emsp;&emsp;&emsp;&emsp;<br>C: &emsp;&emsp;&emsp;&emsp;&emsp;</div>
 </div>
 </div>
 
@@ -402,8 +387,6 @@ $$V - E + F = 2$$
 *where V is the number of vertices, E the number of edges, and F the number of faces.*
 :::
 
-[← back to the list](#the-list)
-
 ::: {.notes}
 Now put the formula on screen. They already know it.
 
@@ -413,8 +396,8 @@ That's the narrative arc: a formula they've known for five minutes, discovered b
 ## Slippery Puzzle Recap
 
 - Proof by induction follows.
-- Originally designed as an ice-breaker. 
 - Students *need* to interact.
+- Originally designed as an ice-breaker. 
 - Why is it called "Slippery Puzzle?"
 
 
@@ -424,23 +407,20 @@ That's the narrative arc: a formula they've known for five minutes, discovered b
 
 ## Unifying Features
 
-`[IMAGE: five moves, a repeating pattern, something that clicks into place]`
+1. [**Acknowledge the canonical treatment**]{.purple} — *give them the starting place for independent study*
 
-::: {.fragment style="margin-top: 0.8em;"}
-1. **Acknowledge the canonical treatment** — *give them the starting place for independent study*
-2. **Situate in an authentic, motivating context** — *find something delightful*
-3. **Design for active knowledge construction** — *don't tell them anything, make them speculate*
-4. **Make structure perceptible** — *illuminate a metaphor, or make things sensory*
-5. **Culminate in authentic production** — *nurture their ability to build things*
-:::
+2. [**Situate in an authentic, motivating context**]{.orange} — *find something delightful*
 
-::: {.fragment}
-**Community underlies all of it.** These moves are designed for a room.
-:::
+3. [**Design for active knowledge construction**]{.green} — *don't tell them anything, let them speculate*
+
+4. [**Make structure perceptible**]{.yellow} — *illuminate a metaphor, or make things sensory*
+
+5. [**Culminate in authentic production**]{.red} — *nurture their ability to build things*
 
 
 ::: {.notes}
-"Let's name what just happened."
+
+**Community underlies all of it.** These moves are designed for a room.
 
 This is recognition, not instruction. They've seen two examples. Each step should land as "oh — that's what that was."
 
@@ -453,26 +433,23 @@ Important framing: "I didn't design this methodology and then build the lessons.
 
 ## Does it work?
 
-`[IMAGE: four small images — brain/dopamine, enthusiastic teacher, human pyramid, students working on something real]`
 
-::: {.fragment}
-Curiosity enhances memory encoding. &emsp; *(Gruber et al., 2014, Neuron)*
-:::
-::: {.fragment}
-Teacher enthusiasm is associated with increased student engagement and enjoyment. &emsp; *(Frenzel et al.)*
-:::
-::: {.fragment}
-Metaphors support understanding by mapping structure between domains. &emsp; *(Gentner, 1983)*
-:::
-::: {.fragment}
-Authentic, real-world tasks often increase student motivation. &emsp; *(PBL meta-analyses, 2024)*
-:::
+[**Curiosity**]{.purple} enhances memory encoding. &emsp; *(Gruber et al., 2014, Neuron)*
+
+
+[**Teacher enthusiasm**]{.orange} is associated with increased student engagement and enjoyment. &emsp; *(Frenzel et al.)*
+
+
+[**Metaphors**]{.green} support understanding by mapping structure between domains. &emsp; *(Gentner, 1983)*
+
+
+[**Authentic, real-world tasks**]{.yellow} often increase student motivation. &emsp; *(PBL meta-analyses, 2024)*
+
 
 ::: {.notes}
 Fast. These are explanations for what they just experienced, not arguments to convince them. They felt it already.
 :::
 
----
 
 <!-- ============================================================ -->
 <!-- THE HINGE (Beat 11) — end of Part A
@@ -507,6 +484,10 @@ I want to give us all a minute to consider and discuss "Where is everyone else?"
 
 # Part B: Attendance
 
+::: {.notes}
+This is our next puzzle. I'd like to facilitate a discussion where we solve it together!
+:::
+
 
 ## I Was Missing
 
@@ -524,24 +505,25 @@ He is an incredible and dazzling teacher. I loved the material. I simply didn't 
 
 :::
 
-## Why? 
+## Why Don't They Come? 
 
 ::: {.fragment}
-**No kinship** — they don't feel the room needs them.
-Belonging is essential. 
+[**Physical barriers**]{.blue} — commutes or jobs.
 :::
 
 ::: {.fragment}
-**Present bias** — immediate vs. delayed gratification. A volleyball game with friends is more appealing in the moment, and the cost of missing class is invisible.
+[**Overconfidence**]{.green} — they believe they can catch up.
 :::
 
 ::: {.fragment}
-**Overconfidence** — they believe they can catch up.
+[**Present bias**]{.orange} — immediate vs. delayed gratification. A volleyball game with friends is more appealing in the moment, and the cost of missing class is invisible.
 :::
 
 ::: {.fragment}
-**Physical barriers** — commutes or jobs.
+[**No kinship**]{.purple} — they don't feel the room needs them.
+Belonging is essential.
 :::
+
 
 ::: {.notes}
 Pivot from the personal to the general. "These are the patterns I see in my students now. They map to my own story. I'm guessing they map to some of yours too."
@@ -576,9 +558,7 @@ But I am haunted by:
 ::: {.notes}
 "I had never incentivized attendance until this term. I held out for years. And then this year I caved — I added an attendance threshold."
 
-Pause.
-
-"The minute they hit the threshold, attendance died. Like, immediately. Deci and Ryan could have told me that. External rewards erode the very motivation you're trying to encourage. They did tell me. I didn't listen."
+The minute they hit the threshold, attendance died. Like, immediately. Deci and Ryan could have told me that. External rewards erode the very motivation you're trying to encourage.
 
 Then reveal the chart.
 
@@ -592,49 +572,34 @@ The point of putting this BEFORE "what have you tried?" — I don't want anyone 
 :::
 
 
-
-<!-- Beat 13b: What have you tried? -->
-
-## What have *you* tried?
-
-::: {.notes}
-"Now that I've shown my cards — what have you tried? Shout it out."
-
-Take 4–5 answers. React genuinely. Pattern-spot aloud: "Ok — that's a carrot... that's a stick... that one's structural, that's interesting..."
-
-The earlier confession means people can share their extrinsic approaches without feeling judged — they know I've been there.
-:::
-
-
 <!-- Beat 14: What I'm trying instead -->
 
-## A Tentative Framework:
+## Some Half-Baked Ideas...
 
 ::: {style="font-size: 0.85em; margin-top: 0.8em;"}
 
 ::: {.fragment}
-**Structural design** — presence as a epistemologic necessity in learning activities
+[**Structural design**]{.purple} — presence as a epistemologic necessity in learning activities
 :::
 
 ::: {.fragment}
-**Making the invisible cost visible** — make sure community values are transparent
+[**Making the invisible cost visible**]{.orange} — make sure community values are transparent
 :::
 
 ::: {.fragment}
-**Social accountability** — create subgroups who expect to see them
+[**Social accountability**]{.green} — create subgroups who expect to see them
 :::
 
 ::: {.fragment}
-**Pre-commitment** — students declare why being in the room matters, refer to it often
+[**Pre-commitment**]{.yellow} — students declare why being in the room matters, refer to it often
 :::
 
 ::: {.fragment}
-**Attendance Chart** — (Christine Goedhart) 
-
-::: {.fragment}
-**Recording as precondition** — absence must be a choice, not a constraint
+[**Attendance Chart**]{.magenta} — Christine Goedhart's daily reflection and physical evidence
 :::
 
+::: {.fragment}
+[**Recording as precondition**]{.blue} — absence must be a choice, not a constraint
 :::
 
 :::
@@ -658,7 +623,7 @@ Note: I record everything and livestream every class. Students who can't be ther
 
 Deliver each one with a self-rating:
 
-Structural design: "I think this one actually works. But I can't do it every day. It's an aspiration."
+Structural design: "I think this one actually works."
 
 Making cost visible: "I do this. I don't know if it works. But it feels honest."
 
@@ -669,27 +634,27 @@ Pre-commitment: "This might be completely delusional. But Gollwitzer says writte
 Recording: "This one I'm sure about. You can't ask people to show up and then punish them for having a life."
 :::
 
----
 
 <!-- Research supporting attendance strategies -->
 
-##
+## Research Supporting the Ideas
 
-::: {.fragment}
+
 External rewards erode intrinsic motivation &emsp; *(Deci & Ryan, 2000)*
-:::
-::: {.fragment}
+
+
 Written intentions outperform held beliefs &emsp; *(Gollwitzer, 1999)*
-:::
-::: {.fragment}
+
+
 Belonging is the strongest predictor of persistence &emsp; *(Walton & Cohen, 2011)*
-:::
-::: {.fragment}
-Kinship — relational accountability sustains presence &emsp; *(Wilson, 2008; Brayboy, 2005)*
-:::
-::: {.fragment}
+
+
+Kinship: relational accountability sustains presence &emsp; *(Wilson, 2008; Brayboy, 2005)*
+
+
 Present bias: immediate costs outweigh deferred value &emsp; *(O'Donoghue & Rabin, 1999)*
-:::
+
+
 
 ::: {.notes}
 Same format as the earlier research slides. Fast.
@@ -705,20 +670,18 @@ Kinship — Shawn Wilson and Bryan Brayboy: Indigenous scholarship has long name
 O'Donoghue & Rabin: present bias is not laziness. Students genuinely intend to come. The asymmetry between immediate cost and deferred value is structural. Design has to account for it.
 :::
 
----
-
-<!-- Kinship in CS practice -->
+<!-- Kinship in CS practice 
 
 ## Kinship in practice
 
 ::: {style="font-size: 0.95em; margin-top: 1.2em;"}
 
 ::: {.fragment}
-**Knowledge reciprocity** — students document bugs and fixes in a shared classroom knowledge base. Their insights sustain everyone else's progress.
+[**Knowledge reciprocity**]{.purple} — example: students document bugs and fixes in a shared classroom knowledge base. Their insights sustain everyone else's progress.
 :::
 
 ::: {.fragment style="margin-top: 0.6em;"}
-**Peer mentorship by visiting** — students move between groups to listen and support, not to solve. The goal is presence, not rescue.
+[**Peer mentorship by visiting**]{.orange} — example: students move between groups to listen and support. The goal is presence and connection.
 :::
 
 :::
@@ -733,17 +696,16 @@ O'Donoghue & Rabin: present bias is not laziness. Students genuinely intend to c
 These ideas are drawn from Indigenous methodologies (Wilson, Brayboy) and the Computer Science Teachers Association's work on relational pedagogy. They name a different theory of why students should be in the room — not because they owe me attendance, but because they owe each other presence.
 :::
 
----
-
 <!-- Beat 15: Table activity — attendance -->
 
-## Your turn
+## Table Talk for Innovation
 
 ::: {style="font-size: 0.9em; margin-top: 1em;"}
 
-1. What's working for you right now? What gets students to show up — and stay engaged?
-2. What have you tried that backfired?
-3. If you could design one structural feature — built into the lesson, not the syllabus — that makes presence matter, what would it be?
+1. What's missing from these ideas?
+2. What's working for you? What gets students to show up, and stay engaged?
+3. What have you tried that *didn't* work?
+4. Ideas for innovation?
 
 :::
 
@@ -757,27 +719,65 @@ This is the mirror moment: the talk itself is a demonstration of what it's argui
 "Something will come out of this conversation that none of us walked in with. When it does — that's the c-factor. Live. In this room."
 :::
 
----
 
 <!-- Beat 16: Closing -->
 
-##
+## 
 
-::: {style="text-align: center; font-size: 1.3em; padding-top: 1.5em;"}
-A tutoring system answers your question.
+::: {style="text-align: center; font-size: 1.4em; padding-top: 2em; line-height: 1.5;"}
+[Everything I know about teaching,]{.yellow}
 
-::: {.fragment}
-A teacher opens the gap that makes you realize
-you had a question in you all along —
-:::
+[I learn at Puzzled Pint,]{.yellow}
 
-::: {.fragment}
-and the moment you feel that gap,
+[and the puzzles are never the point.]{.orange}
 
-**your brain is already learning.**
-:::
 :::
 
 ::: {.notes}
 Let it breathe. No summary after this.
+
+The reveal pacing matters: the title of the talk is a setup. The middle line is the truth. The last line is the meaning. Let each fragment land before the next.
+
+Thank you for hosting me today!
+:::
+
+## Questions?
+
+
+## References {style="font-size: 0.4em;"}
+
+Barsalou, L. W. (2008). Grounded cognition. *Annual Review of Psychology*, 59, 617–645.
+
+Brayboy, B. M. J. (2005). Toward a Tribal Critical Race Theory in education. *The Urban Review*, 37(5), 425–446.
+
+Corbett, J. *Computational Indigenuity: Indigenous Computing Frameworks*. WCCCE.
+
+Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. *Psychological Inquiry*, 11(4), 227–268.
+
+Frenzel, A. C., Daniels, L., & Burić, I. (2021). Teacher emotions in the classroom and their implications for students. *Educational Psychologist*, 56(4), 250–264.
+
+Gentner, D. (1983). Structure-mapping: A theoretical framework for analogy. *Cognitive Science*, 7(2), 155–170.
+
+Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. *American Psychologist*, 54(7), 493–503.
+
+Gruber, M. J., Gelman, B. D., & Ranganath, C. (2014). States of curiosity modulate hippocampus-dependent learning via the dopaminergic circuit. *Neuron*, 84(2), 486–496.
+
+Lave, J., & Wenger, E. (1991). *Situated Learning: Legitimate Peripheral Participation*. Cambridge University Press.
+
+Loewenstein, G. (1994). The psychology of curiosity: A review and reinterpretation. *Psychological Bulletin*, 116(1), 75–98.
+
+O'Donoghue, T., & Rabin, M. (1999). Doing it now or later. *American Economic Review*, 89(1), 103–124.
+
+Rosenthal, A. (2023). *The joyful, perplexing world of puzzle hunts* [TED Talk]. TED Conferences.
+
+Walton, G. M., & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. *Science*, 331(6023), 1447–1451.
+
+Wegner, D. M. (1987). Transactive memory: A contemporary analysis of the group mind. In B. Mullen & G. R. Goethals (Eds.), *Theories of Group Behavior* (pp. 185–208). Springer.
+
+Wilson, S. (2008). *Research is Ceremony: Indigenous Research Methods*. Fernwood Publishing.
+
+Woolley, A. W., Chabris, C. F., Pentland, A., Hashmi, N., & Malone, T. W. (2010). Evidence for a collective intelligence factor in the performance of human groups. *Science*, 330(6004), 686–688.
+
+::: {.notes}
+Real bibliography. Don't read it aloud — just have it up while taking questions, and it serves as the lasting handout if anyone wants to follow up later.
 :::
