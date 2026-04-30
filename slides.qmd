@@ -299,7 +299,7 @@ Each student gets a unique input — their own factory floor. They execute the s
 
 ## Example 1: Candy Hearts {.class-demo}
 
-{{< video candy_hearts_demo.mp4 >}}
+{{< video spedupcandy.mp4 >}}
 
 ::: {.notes}
 "What word is spelled out by the letters on top of each belt?"
