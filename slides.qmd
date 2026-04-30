@@ -299,7 +299,7 @@ Each student gets a unique input — their own factory floor. They execute the s
 
 ## Example 1: Candy Hearts {.class-demo}
 
-`[IMAGE: the reveal — a student's output spelling their personalized wellness message]`
+{{< video candy_hearts_demo.mp4 >}}
 
 ::: {.notes}
 "What word is spelled out by the letters on top of each belt?"
@@ -507,22 +507,15 @@ He is an incredible and dazzling teacher. I loved the material. I simply didn't 
 
 ## Why Don't They Come? 
 
-::: {.fragment}
+
 [**Physical barriers**]{.blue} — commutes or jobs.
-:::
 
-::: {.fragment}
 [**Overconfidence**]{.green} — they believe they can catch up.
-:::
 
-::: {.fragment}
 [**Present bias**]{.orange} — immediate vs. delayed gratification. A volleyball game with friends is more appealing in the moment, and the cost of missing class is invisible.
-:::
 
-::: {.fragment}
-[**No kinship**]{.purple} — they don't feel the room needs them.
-Belonging is essential.
-:::
+[**No kinship**]{.purple} — they don't feel the community needs them, or that they belong.
+
 
 
 ::: {.notes}
@@ -547,11 +540,12 @@ What am I missing?
 
 \ 
 
+::: {.fragment}
 
 But I am haunted by:
 
 >External rewards erode intrinsic motivation &emsp; *(Deci & Ryan, 2000)*
-
+:::
 
 :::
 
@@ -579,11 +573,11 @@ The point of putting this BEFORE "what have you tried?" — I don't want anyone 
 ::: {style="font-size: 0.85em; margin-top: 0.8em;"}
 
 ::: {.fragment}
-[**Structural design**]{.purple} — presence as a epistemologic necessity in learning activities
+[**Structural design**]{.purple} — presence as a epistemological necessity in learning activities
 :::
 
 ::: {.fragment}
-[**Making the invisible cost visible**]{.orange} — make sure community values are transparent
+[**Making the hidden cost visible**]{.orange} — make sure community values are transparent
 :::
 
 ::: {.fragment}
@@ -591,7 +585,7 @@ The point of putting this BEFORE "what have you tried?" — I don't want anyone 
 :::
 
 ::: {.fragment}
-[**Pre-commitment**]{.yellow} — students declare why being in the room matters, refer to it often
+[**Pre-commitment**]{.yellow} — on day 1 students declare why being in the room matters, refer to it often
 :::
 
 ::: {.fragment}
@@ -599,7 +593,7 @@ The point of putting this BEFORE "what have you tried?" — I don't want anyone 
 :::
 
 ::: {.fragment}
-[**Recording as precondition**]{.blue} — absence must be a choice, not a constraint
+[**Recording is a given**]{.blue} — equity and accessibility
 :::
 
 :::
@@ -670,31 +664,6 @@ Kinship — Shawn Wilson and Bryan Brayboy: Indigenous scholarship has long name
 O'Donoghue & Rabin: present bias is not laziness. Students genuinely intend to come. The asymmetry between immediate cost and deferred value is structural. Design has to account for it.
 :::
 
-<!-- Kinship in CS practice 
-
-## Kinship in practice
-
-::: {style="font-size: 0.95em; margin-top: 1.2em;"}
-
-::: {.fragment}
-[**Knowledge reciprocity**]{.purple} — example: students document bugs and fixes in a shared classroom knowledge base. Their insights sustain everyone else's progress.
-:::
-
-::: {.fragment style="margin-top: 0.6em;"}
-[**Peer mentorship by visiting**]{.orange} — example: students move between groups to listen and support. The goal is presence and connection.
-:::
-
-:::
-
-::: {.notes}
-"Kinship sounds abstract. Here's what it can look like in a CS classroom."
-
-**Knowledge reciprocity:** Instead of solo-coding for a grade — extraction — students contribute to a shared knowledge base. Bugs they hit, fixes they found. The next student who hits the same wall finds it because someone else was there. Presence becomes contribution; absence becomes a small absence in the shared resource.
-
-**Visiting (not solving):** Structured time where students move between groups. The rule is listen, ask, support — don't take over. This is the opposite of the "TA who fixes everything" model. It positions every student as someone whose presence matters to someone else.
-
-These ideas are drawn from Indigenous methodologies (Wilson, Brayboy) and the Computer Science Teachers Association's work on relational pedagogy. They name a different theory of why students should be in the room — not because they owe me attendance, but because they owe each other presence.
-:::
 
 <!-- Beat 15: Table activity — attendance -->
 
@@ -705,9 +674,11 @@ These ideas are drawn from Indigenous methodologies (Wilson, Brayboy) and the Co
 1. What's missing from these ideas?
 2. What's working for you? What gets students to show up, and stay engaged?
 3. What have you tried that *didn't* work?
-4. Ideas for innovation?
-
+4. What are your ideas for innovation?
 :::
+
+![](QR\ Code\ for\ Solving\ Attendance.png){fig-align="center" height="200"}
+
 
 ::: {.notes}
 "I've shared my ideas. But I said at the start: I suspect this room has better ones. Let's find out."
@@ -718,6 +689,10 @@ This is the mirror moment: the talk itself is a demonstration of what it's argui
 
 "Something will come out of this conversation that none of us walked in with. When it does — that's the c-factor. Live. In this room."
 :::
+
+## Reflections and Ruminations
+
+<iframe src="https://app.sli.do/event/4fZg6m7B9swXjJEoFns7qe" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido"></iframe>
 
 
 <!-- Beat 16: Closing -->

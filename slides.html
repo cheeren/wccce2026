@@ -6,7 +6,9 @@
 <script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="slides_files/libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="slides_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Cinda Heeren">
@@ -570,7 +572,7 @@ DSCI 221
 </section>
 <section id="example-1-candy-hearts-2" class="slide level2 class-demo">
 <h2>Example 1: Candy Hearts</h2>
-<p><code>[IMAGE: the reveal — a student's output spelling their personalized wellness message]</code></p>
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="candy_hearts_demo.mp4"></video>
 <aside class="notes">
 <p>“What word is spelled out by the letters on top of each belt?”</p>
 <p>Every student’s answer is different. Every student’s message is personal — “you got this”, “breathe”, “keep going.”</p>
@@ -833,18 +835,10 @@ How do the numbers relate to the graph on the flip side?
 </section>
 <section id="why-dont-they-come" class="slide level2">
 <h2>Why Don’t They Come?</h2>
-<div class="fragment">
 <p><span class="blue"><strong>Physical barriers</strong></span> — commutes or jobs.</p>
-</div>
-<div class="fragment">
 <p><span class="green"><strong>Overconfidence</strong></span> — they believe they can catch up.</p>
-</div>
-<div class="fragment">
 <p><span class="orange"><strong>Present bias</strong></span> — immediate vs.&nbsp;delayed gratification. A volleyball game with friends is more appealing in the moment, and the cost of missing class is invisible.</p>
-</div>
-<div class="fragment">
-<p><span class="purple"><strong>No kinship</strong></span> — they don’t feel the room needs them. Belonging is essential.</p>
-</div>
+<p><span class="purple"><strong>No kinship</strong></span> — they don’t feel the community needs them, or that they belong.</p>
 <aside class="notes">
 <p>Pivot from the personal to the general. “These are the patterns I see in my students now. They map to my own story. I’m guessing they map to some of yours too.”</p>
 <p>Deliver each fragment lightly. No moralizing. The “none of them is laziness” frame is doing the work.</p>
@@ -873,10 +867,12 @@ How do the numbers relate to the graph on the flip side?
 <p><br>
 </p>
 <p>&nbsp;</p>
+<div class="fragment">
 <p>But I am haunted by:</p>
 <blockquote>
 <p>External rewards erode intrinsic motivation   <em>(Deci &amp; Ryan, 2000)</em></p>
 </blockquote>
+</div>
 </div>
 <aside class="notes">
 <p>“I had never incentivized attendance until this term. I held out for years. And then this year I caved — I added an attendance threshold.”</p>
@@ -903,22 +899,22 @@ How do the numbers relate to the graph on the flip side?
 <h2>Some Half-Baked Ideas…</h2>
 <div style="font-size: 0.85em; margin-top: 0.8em;">
 <div class="fragment">
-<p><span class="purple"><strong>Structural design</strong></span> — presence as a epistemologic necessity in learning activities</p>
+<p><span class="purple"><strong>Structural design</strong></span> — presence as a epistemological necessity in learning activities</p>
 </div>
 <div class="fragment">
-<p><span class="orange"><strong>Making the invisible cost visible</strong></span> — make sure community values are transparent</p>
+<p><span class="orange"><strong>Making the hidden cost visible</strong></span> — make sure community values are transparent</p>
 </div>
 <div class="fragment">
 <p><span class="green"><strong>Social accountability</strong></span> — create subgroups who expect to see them</p>
 </div>
 <div class="fragment">
-<p><span class="yellow"><strong>Pre-commitment</strong></span> — students declare why being in the room matters, refer to it often</p>
+<p><span class="yellow"><strong>Pre-commitment</strong></span> — on day 1 students declare why being in the room matters, refer to it often</p>
 </div>
 <div class="fragment">
 <p><span class="magenta"><strong>Attendance Chart</strong></span> — Christine Goedhart’s daily reflection and physical evidence</p>
 </div>
 <div class="fragment">
-<p><span class="blue"><strong>Recording as precondition</strong></span> — absence must be a choice, not a constraint</p>
+<p><span class="blue"><strong>Recording is a given</strong></span> — equity and accessibility</p>
 </div>
 </div>
 <aside class="notes">
@@ -975,32 +971,6 @@ How do the numbers relate to the graph on the flip side?
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- Kinship in CS practice 
-
-## Kinship in practice
-
-::: {style="font-size: 0.95em; margin-top: 1.2em;"}
-
-::: {.fragment}
-[**Knowledge reciprocity**]{.purple} — example: students document bugs and fixes in a shared classroom knowledge base. Their insights sustain everyone else's progress.
-:::
-
-::: {.fragment style="margin-top: 0.6em;"}
-[**Peer mentorship by visiting**]{.orange} — example: students move between groups to listen and support. The goal is presence and connection.
-:::
-
-:::
-
-::: {.notes}
-"Kinship sounds abstract. Here's what it can look like in a CS classroom."
-
-**Knowledge reciprocity:** Instead of solo-coding for a grade — extraction — students contribute to a shared knowledge base. Bugs they hit, fixes they found. The next student who hits the same wall finds it because someone else was there. Presence becomes contribution; absence becomes a small absence in the shared resource.
-
-**Visiting (not solving):** Structured time where students move between groups. The rule is listen, ask, support — don't take over. This is the opposite of the "TA who fixes everything" model. It positions every student as someone whose presence matters to someone else.
-
-These ideas are drawn from Indigenous methodologies (Wilson, Brayboy) and the Computer Science Teachers Association's work on relational pedagogy. They name a different theory of why students should be in the room — not because they owe me attendance, but because they owe each other presence.
-:::
-
 <!-- Beat 15: Table activity — attendance -->
 </section>
 <section id="table-talk-for-innovation" class="slide level2">
@@ -1010,8 +980,13 @@ These ideas are drawn from Indigenous methodologies (Wilson, Brayboy) and the Co
 <li>What’s missing from these ideas?</li>
 <li>What’s working for you? What gets students to show up, and stay engaged?</li>
 <li>What have you tried that <em>didn’t</em> work?</li>
-<li>Ideas for innovation?</li>
+<li>What are your ideas for innovation?</li>
 </ol>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="QR%20Code%20for%20Solving%20Attendance.png" class="quarto-figure quarto-figure-center" height="200"></p>
+</figure>
 </div>
 <aside class="notes">
 <p>“I’ve shared my ideas. But I said at the start: I suspect this room has better ones. Let’s find out.”</p>
@@ -1029,6 +1004,11 @@ These ideas are drawn from Indigenous methodologies (Wilson, Brayboy) and the Co
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="reflections-and-ruminations" class="slide level2">
+<h2>Reflections and Ruminations</h2>
+<iframe src="https://app.sli.do/event/4fZg6m7B9swXjJEoFns7qe" height="100%" width="100%" frameborder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido">
+</iframe>
 <!-- Beat 16: Closing -->
 </section>
 <section id="section" class="slide level2">
@@ -1474,6 +1454,7 @@ These ideas are drawn from Indigenous methodologies (Wilson, Brayboy) and the Co
         }
       });
       </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
     
 
 </body></html>
